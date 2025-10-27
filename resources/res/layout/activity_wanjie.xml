@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="?attr/bg_backgroud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cn.lightsky.infiniteindicator.recycle.SkinGrakImagView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ganxie"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="?attr/question_color"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="感谢您的评论"/>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:paddingBottom="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/QuestionOptions_item_img_select"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:src="@drawable/icon_options_select_no"
+        app:layout_constraintBottom_toBottomOf="@+id/QuestionOptions_item_tv_content"
+        app:layout_constraintEnd_toStartOf="@+id/QuestionOptions_item_tv_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="?attr/question_color"
+        android:gravity="center_vertical"
+        android:id="@+id/QuestionOptions_item_tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="25dp"
+        android:text=""
+        android:includeFontPadding="false"
+        android:lineSpacingMultiplier="1.1"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/QuestionOptions_item_img_select"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/optionimg"
+        android:visibility="visible"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/QuestionOptions_item_tv_content"
+        app:layout_constraintTop_toBottomOf="@+id/QuestionOptions_item_tv_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

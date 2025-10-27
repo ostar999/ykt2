@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/plvlc_interact_fl_container"
+    android:background="#4d000000"
+    android:visibility="invisible"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/plvlc_interact_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/plvlc_interact_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.easefun.polyv.livescenes.feature.interact.PLVInteractWebView
+                    android:id="@+id/plvlc_interact_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_gravity="right"
+                android:id="@+id/plvlc_interact_iv_close"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/plv_icon_close"/>
+        </FrameLayout>
+    </ScrollView>
+</FrameLayout>

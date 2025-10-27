@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/sp_11"
+        android:textColor="?attr/new_fail_color"
+        android:id="@+id/title_adjust_tv"
+        android:background="?attr/main_theme_five_deep_color"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dp_16"
+        android:paddingVertical="@dimen/dp_5"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/adjust_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

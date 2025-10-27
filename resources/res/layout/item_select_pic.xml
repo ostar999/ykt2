@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:layout_gravity="end"
+        android:id="@+id/iv_delete"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:src="?attr/ic_select_pic_close"
+        android:layout_marginEnd="2dp"/>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/processView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:indeterminateDrawable="?attr/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"/>
+</FrameLayout>

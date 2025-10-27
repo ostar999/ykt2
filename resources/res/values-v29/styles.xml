@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AnimActivity" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:windowAnimationStyle">@style/AnimFade</item>
+        <item name="android:navigationBarColor">@color/color_white</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorAccent">@color/c_cccccc</item>
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/c_006cff</item>
+    </style>
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarSize">48dp</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorAccent">@color/app_theme_red</item>
+        <item name="colorPrimary">@color/app_theme_red</item>
+        <item name="colorPrimaryDark">@color/white</item>
+    </style>
+    <style name="AppTheme.Startup" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/startup</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="AppTheme.StartupN" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/color_black</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="SyyxAppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:navigationBarColor">@color/color_transparent</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorAccent">@color/c_cccccc</item>
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    <style name="authsdk_app_theme_day" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="authsdk_app_theme_light" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+</resources>

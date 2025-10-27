@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layoutLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_52">
+        <com.psychiatrygarden.widget.DashedLineView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/line1"
+            android:layout_width="@dimen/dp_3"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:ykbGapW="2dp"
+            app:ykbLineStrokeW="0.7dp"
+            app:ykbLinesColor="?attr/new_gray_line_color"
+            app:ykbLinesW="2dp"/>
+        <ImageView
+            android:id="@+id/imgPoint"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:src="@drawable/icon_choose_school_calendar_point_red_svg"/>
+        <com.psychiatrygarden.widget.DashedLineView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/line2"
+            android:layout_width="@dimen/dp_3"
+            android:layout_height="@dimen/dp_8"
+            android:layout_weight="1"
+            app:ykbGapW="2dp"
+            app:ykbLineStrokeW="0.7dp"
+            app:ykbLinesColor="?attr/new_gray_line_color"
+            app:ykbLinesW="2dp"/>
+    </LinearLayout>
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="?attr/first_txt_color"
+        android:id="@+id/tvYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2025"
+        android:layout_toRightOf="@+id/layoutLeft"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_16"/>
+</RelativeLayout>

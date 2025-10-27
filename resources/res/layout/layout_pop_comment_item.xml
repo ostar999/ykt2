@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_reply_layout"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.psychiatrygarden.widget.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_option_1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_circle_reply"
+        android:layout_centerHorizontal="true"
+        app:border_color="@color/gray_line_new"
+        app:border_width="0.8dp"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/question_color"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/reply_label_only"
+        android:layout_below="@+id/iv_option_1"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

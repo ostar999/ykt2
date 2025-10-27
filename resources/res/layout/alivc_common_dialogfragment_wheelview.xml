@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:orientation="horizontal"
+        android:background="@color/alivc_common_bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_common_height_tittle_48">
+        <TextView
+            android:textSize="@dimen/alivc_common_font_15"
+            android:textColor="@color/alivc_common_font_gray_999"
+            android:gravity="center"
+            android:id="@+id/alivc_tv_cancel"
+            android:paddingLeft="@dimen/alivc_common_padding_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/alivc_common_cancel"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/alivc_common_font_15"
+            android:textColor="@color/alivc_common_font_red_wine"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:id="@+id/alivc_tv_sure"
+            android:paddingRight="@dimen/alivc_common_padding_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/alivc_common_confirm"/>
+    </FrameLayout>
+    <View
+        android:background="@color/alivc_common_bg_white_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_common_line_1dp"/>
+    <com.aliyun.svideo.common.widget.WheelView
+        android:id="@+id/alivc_wheelView_dialog"
+        android:background="@color/alivc_common_bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_common_height_group_240"
+        app:npv_ItemPaddingHorizental="@dimen/alivc_common_margin_5"
+        app:npv_ItemPaddingVertical="@dimen/alivc_common_margin_5"
+        app:npv_ShowCount="5"
+        app:npv_TextSizeNormal="@dimen/alivc_common_font_13"
+        app:npv_TextSizeSelected="@dimen/alivc_common_font_18"
+        app:npv_WrapSelectorWheel="true"/>
+</LinearLayout>

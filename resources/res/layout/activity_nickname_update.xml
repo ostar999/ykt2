@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/identity_confirm_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:textSize="15sp"
+        android:textColor="?attr/first_text_color"
+        android:textColorHint="?attr/tertiary_text_color"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/et_nickname"
+        android:background="?attr/bg_backgroud"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="温娜"
+        android:maxLines="1"/>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="?attr/secondary_text_color"
+        android:id="@+id/tv_nickname_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="注意："
+        android:layout_below="@+id/et_nickname"
+        android:lineSpacingExtra="4dp"/>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="?attr/secondary_text_color"
+        android:id="@+id/tv_nickname_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:text="1) 用户昵称一年之内，仅允许修改1次         \102) 只能使用中文、字母和数字，不能包含特殊字符         \103) 限2-12个字符"
+        android:layout_toRightOf="@+id/tv_nickname_info"
+        android:layout_below="@+id/et_nickname"
+        android:lineSpacingExtra="4dp"/>
+</RelativeLayout>

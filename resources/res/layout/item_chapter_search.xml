@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_16"
+    android:layout_marginRight="@dimen/dp_16"
+    android:layout_marginHorizontal="@dimen/dp_16">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/color_909090"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/img_lock"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/icon_chapter_lock"
+            android:contentDescription="@null"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_16"
+        style="@style/line_style_book"/>
+</LinearLayout>

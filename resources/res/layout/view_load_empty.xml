@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/emptyType100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/noDataImgv"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:src="@drawable/common_no_data"/>
+        <TextView
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/color_333"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/noDataTv"
+            android:paddingTop="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.noober.background.view.BLTextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/color_white"
+        android:gravity="center"
+        android:id="@+id/emptyType101"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        app:bl_corners_radius="@dimen/dp_6"
+        app:bl_solid_color="#4dffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

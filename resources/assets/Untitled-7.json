@@ -1,0 +1,517 @@
+{
+    "code": 200,
+    "message": "请求成功",
+    "data": {
+        "vip": {
+            "is_vip": 1,
+            "vip_deadline": "2024-05-31 到期",
+            "vip_due_soon": 0,
+            "privilege": [
+                {
+                    "id": 1,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/real_question_video.png",
+                    "title": "真题视频",
+                    "explain": "真题题库内，名师视频解析播放权限",
+                    "usage": "真题题库内提交答案后，可看到视频解析，视频解析全部由医考帮名师团队录制，数量正在增加。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/real_question_video-1.png"
+                },
+                {
+                    "id": 2,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/note_export.png",
+                    "title": "笔记导出",
+                    "explain": "真题题库内，个人笔记导出权限",
+                    "usage": "从首页进入我的笔记界面，点击右上角“导出”生成笔记，然后选择发送至微信。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/note_export-1.png"
+                },
+                {
+                    "id": 3,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/error_question_export.png",
+                    "title": "错题导出",
+                    "explain": "真题题库内，个人错题导出权限",
+                    "usage": "从首页进入我的错题界面，点击右上角“导出”生成错题，然后选择发送至微信。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/error_question_export-1.png"
+                },
+                {
+                    "id": 4,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/collection_export.png",
+                    "title": "收藏导出",
+                    "explain": "真题题库内，个人收藏题导出权限",
+                    "usage": "从首页进入我的收藏界面，点击右上角“导出”生成收藏题，然后选择发送至微信。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/collection_export-1.png"
+                },
+                {
+                    "id": 5,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/comment.png",
+                    "title": "评论特权",
+                    "explain": "1.搜索评论\n2.查看更多热评\n3.查看视频评论",
+                    "usage": "1.评论区右上角点击放大镜搜索评论\n2.滑动到最热评底部（最新评论上方），点击“查看更多热评”",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/comment-1.png"
+                },
+                {
+                    "id": 6,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/question_back_unlock.png",
+                    "title": "题库特权",
+                    "explain": "真题题库免解锁",
+                    "usage": "首页考点顺序、考点乱序、历年真题、考点狂背免解锁直接答题。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/question_back_unlock-1.png"
+                },
+                {
+                    "id": 7,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/question_sets_rights.png",
+                    "title": "题单特权",
+                    "explain": "各类题单免解锁",
+                    "usage": "从首页进入题单界面，真题题单、复试题单、习题题单等免解锁直接答题。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/question_sets_rights-1.png"
+                },
+                {
+                    "id": 8,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/mock_examination.png",
+                    "title": "模考特权",
+                    "explain": "万人模考、万人模考补考、小红书三套卷免解锁",
+                    "usage": "从首页进入题单界面，万人模考和小红书三套卷免解锁直接答题。万人模考每年10月上线，小红书三套卷每年12月上旬上线。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/mock_examination-1.png"
+                },
+                {
+                    "id": 9,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/bbs.png",
+                    "title": "删帖特权",
+                    "explain": "删除自己24小时内发表过的帖子",
+                    "usage": "帖子发表后，点击帖子征文左下角“...”，在弹窗中选择“删除此帖”。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/bbs-1.png"
+                },
+                {
+                    "id": 10,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/attachment_download.png",
+                    "title": "附件下载",
+                    "explain": "下载论坛帖子里的附件",
+                    "usage": "打开论坛帖子下载附件，附件持续增加中。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/attachment_download-1.png"
+                },
+                {
+                    "id": 11,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/advertising.png",
+                    "title": "免除广告",
+                    "explain": "免除APP内90%以上的广告",
+                    "usage": "免除APP内90%以上的广告，含启动页广告、首页弹窗广告、系统推送广告等（重要通知除外）。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/advertising-1.png"
+                },
+                {
+                    "id": 12,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/identification.png",
+                    "title": "身份标识",
+                    "explain": "显示会员身份",
+                    "usage": "在发帖或发表评论时，昵称后面显示会员身份的黄钻标识。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/identification-1.png"
+                },
+                {
+                    "id": 13,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/customer_service.png",
+                    "title": "专属客服",
+                    "explain": "解决APP使用过程的所有问题",
+                    "usage": "关注医考帮APP微信公众号，回复“专属客服”，加入会员服务群，群内有技术团队解决APP使用过程中的所有问题。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/customer_service-1.png"
+                }
+            ],
+            "goods": [
+                {
+                    "goods_id": 61,
+                    "goods_name": "",
+                    "price": "488",
+                    "price_str": "¥ 488",
+                    "per_month": "20元/月",
+                    "month": 24,
+                    "day": "732",
+                    "cent_price": "48800",
+                    "saving": "省1864元",
+                    "button": [
+                        {
+                            "label": "¥ 488 续费 ",
+                            "invalid": 1,
+                            "upgrade_type": "",
+                            "deduction_id": ""
+                        }
+                    ]
+                },
+                {
+                    "goods_id": 62,
+                    "goods_name": "",
+                    "price": "358",
+                    "price_str": "¥ 358",
+                    "per_month": "30元/月",
+                    "month": 12,
+                    "day": "366",
+                    "cent_price": "35800",
+                    "saving": "省818元",
+                    "button": [
+                        {
+                            "label": "¥ 358 续费 ",
+                            "invalid": 1,
+                            "upgrade_type": "",
+                            "deduction_id": ""
+                        }
+                    ]
+                },
+                {
+                    "goods_id": 60,
+                    "goods_name": "",
+                    "price": "258",
+                    "price_str": "¥ 258",
+                    "per_month": "43元/月",
+                    "month": 6,
+                    "day": "186",
+                    "cent_price": "25800",
+                    "saving": "省330元",
+                    "button": [
+                        {
+                            "label": "¥ 258 续费 ",
+                            "invalid": 1,
+                            "upgrade_type": "",
+                            "deduction_id": ""
+                        }
+                    ]
+                },
+                {
+                    "goods_id": 59,
+                    "goods_name": "",
+                    "price": "188",
+                    "price_str": "¥ 188",
+                    "per_month": "63元/月",
+                    "month": 3,
+                    "day": "93",
+                    "cent_price": "18800",
+                    "saving": "省106元",
+                    "button": [
+                        {
+                            "label": "¥ 188 续费 ",
+                            "invalid": 1,
+                            "upgrade_type": "",
+                            "deduction_id": ""
+                        }
+                    ]
+                },
+                {
+                    "goods_id": 58,
+                    "goods_name": "",
+                    "price": "138",
+                    "price_str": "¥ 138",
+                    "per_month": "69元/月",
+                    "month": 2,
+                    "day": "62",
+                    "cent_price": "13800",
+                    "saving": "省58元",
+                    "button": [
+                        {
+                            "label": "¥ 138 续费 ",
+                            "invalid": 1,
+                            "upgrade_type": "",
+                            "deduction_id": ""
+                        }
+                    ]
+                },
+                {
+                    "goods_id": 57,
+                    "goods_name": "1月+",
+                    "price": "98",
+                    "price_str": "¥ 98",
+                    "per_month": "98元/月",
+                    "month": 1,
+                    "day": "31",
+                    "cent_price": "9800",
+                    "saving": "",
+                    "button": [
+                        {
+                            "label": "¥ 98 续费 1月+",
+                            "invalid": 1,
+                            "upgrade_type": "",
+                            "deduction_id": ""
+                        }
+                    ]
+                }
+            ],
+            "rights_vs_table": [
+                [
+                    "专属特权",
+                    "普通用户",
+                    "VIP会员",
+                    "SVIP会员"
+                ],
+                [
+                    "真题视频",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "笔记导出",
+                    "0",
+                    "1",
+                    "1"
+                ],
+                [
+                    "错题导出",
+                    "0",
+                    "1",
+                    "1"
+                ],
+                [
+                    "收藏导出",
+                    "0",
+                    "0",
+                    "1"
+                ]
+            ],
+            "available": 1
+        },
+        "svip": {
+            "is_vip": 1,
+            "vip_deadline": "2024-05-31 到期",
+            "vip_due_soon": 0,
+            "privilege": [
+                {
+                    "id": 1,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/real_question_video.png",
+                    "title": "真题视频",
+                    "explain": "真题题库内，名师视频解析播放权限",
+                    "usage": "真题题库内提交答案后，可看到视频解析，视频解析全部由医考帮名师团队录制，数量正在增加。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/real_question_video-1.png"
+                },
+                {
+                    "id": 2,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/note_export.png",
+                    "title": "笔记导出",
+                    "explain": "真题题库内，个人笔记导出权限",
+                    "usage": "从首页进入我的笔记界面，点击右上角“导出”生成笔记，然后选择发送至微信。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/note_export-1.png"
+                },
+                {
+                    "id": 3,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/error_question_export.png",
+                    "title": "错题导出",
+                    "explain": "真题题库内，个人错题导出权限",
+                    "usage": "从首页进入我的错题界面，点击右上角“导出”生成错题，然后选择发送至微信。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/error_question_export-1.png"
+                },
+                {
+                    "id": 4,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/collection_export.png",
+                    "title": "收藏导出",
+                    "explain": "真题题库内，个人收藏题导出权限",
+                    "usage": "从首页进入我的收藏界面，点击右上角“导出”生成收藏题，然后选择发送至微信。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/collection_export-1.png"
+                },
+                {
+                    "id": 5,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/comment.png",
+                    "title": "评论特权",
+                    "explain": "1.搜索评论\n2.查看更多热评\n3.查看视频评论",
+                    "usage": "1.评论区右上角点击放大镜搜索评论\n2.滑动到最热评底部（最新评论上方），点击“查看更多热评”",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/comment-1.png"
+                },
+                {
+                    "id": 6,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/question_back_unlock.png",
+                    "title": "题库特权",
+                    "explain": "真题题库免解锁",
+                    "usage": "首页考点顺序、考点乱序、历年真题、考点狂背免解锁直接答题。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/question_back_unlock-1.png"
+                },
+                {
+                    "id": 7,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/question_sets_rights.png",
+                    "title": "题单特权",
+                    "explain": "各类题单免解锁",
+                    "usage": "从首页进入题单界面，真题题单、复试题单、习题题单等免解锁直接答题。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/question_sets_rights-1.png"
+                },
+                {
+                    "id": 8,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/mock_examination.png",
+                    "title": "模考特权",
+                    "explain": "万人模考、万人模考补考、小红书三套卷免解锁",
+                    "usage": "从首页进入题单界面，万人模考和小红书三套卷免解锁直接答题。万人模考每年10月上线，小红书三套卷每年12月上旬上线。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/mock_examination-1.png"
+                },
+                {
+                    "id": 9,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/bbs.png",
+                    "title": "删帖特权",
+                    "explain": "删除自己24小时内发表过的帖子",
+                    "usage": "帖子发表后，点击帖子征文左下角“...”，在弹窗中选择“删除此帖”。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/bbs-1.png"
+                },
+                {
+                    "id": 10,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/attachment_download.png",
+                    "title": "附件下载",
+                    "explain": "下载论坛帖子里的附件",
+                    "usage": "打开论坛帖子下载附件，附件持续增加中。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/attachment_download-1.png"
+                },
+                {
+                    "id": 11,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/advertising.png",
+                    "title": "免除广告",
+                    "explain": "免除APP内90%以上的广告",
+                    "usage": "免除APP内90%以上的广告，含启动页广告、首页弹窗广告、系统推送广告等（重要通知除外）。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/advertising-1.png"
+                },
+                {
+                    "id": 12,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/identification.png",
+                    "title": "身份标识",
+                    "explain": "显示会员身份",
+                    "usage": "在发帖或发表评论时，昵称后面显示会员身份的黄钻标识。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/identification-1.png"
+                },
+                {
+                    "id": 13,
+                    "icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/customer_service.png",
+                    "title": "专属客服",
+                    "explain": "解决APP使用过程的所有问题",
+                    "usage": "关注医考帮APP微信公众号，回复“专属客服”，加入会员服务群，群内有技术团队解决APP使用过程中的所有问题。",
+                    "app_id": 10,
+                    "related_icon": "https://ykhp-user-imges.oss-cn-beijing.aliyuncs.com/Uploads/Shop/vip/customer_service-1.png"
+                }
+            ],
+            "goods": [
+                {
+                    "goods_id": 134,
+                    "goods_name": "6月",
+                    "price": "1000",
+                    "price_str": "¥ 1000",
+                    "per_month": "167元/月",
+                    "month": 6,
+                    "day": "185",
+                    "cent_price": "100000",
+                    "saving": "省350元",
+                    "button": [
+                        {
+                            "label": "¥ 1000 续费 6月",
+                            "valid": 1,
+                            "upgrade_type": "",
+                            "deduction_id": ""
+                        },
+                        {
+                            "label": "￥ 604 升级 6月",
+                            "valid": 1,
+                            "upgrade_type": "vip_to_svip",
+                            "deduction_id": "1"
+                        }
+                    ]
+                },
+                {
+                    "goods_id": 133,
+                    "goods_name": "3月",
+                    "price": "555",
+                    "price_str": "¥ 555",
+                    "per_month": "185元/月",
+                    "month": 3,
+                    "day": "93",
+                    "cent_price": "55500",
+                    "saving": "省120元",
+                    "button": [
+                        {
+                            "label": "¥ 555 续费 3月",
+                            "valid": 1,
+                            "upgrade_type": "",
+                            "deduction_id": ""
+                        },
+                        {
+                            "label": "￥ 159 升级 3月",
+                            "valid": 1,
+                            "upgrade_type": "vip_to_svip",
+                            "deduction_id": "1"
+                        }
+                    ]
+                },
+                {
+                    "goods_id": 131,
+                    "goods_name": "1月",
+                    "price": "225",
+                    "price_str": "¥ 225",
+                    "per_month": "225元/月",
+                    "month": 1,
+                    "day": "31",
+                    "cent_price": "22500",
+                    "saving": "",
+                    "button": [
+                        {
+                            "label": "¥ 225 续费 1月",
+                            "valid": 1,
+                            "upgrade_type": "",
+                            "deduction_id": ""
+                        },
+                        {
+                            "label": "-￥ 171 升级 1月",
+                            "valid": 0,
+                            "upgrade_type": "vip_to_svip",
+                            "deduction_id": "1"
+                        }
+                    ]
+                }
+            ],
+            "rights_vs_table": [
+                [
+                    "专属特权",
+                    "普通用户",
+                    "VIP会员",
+                    "SVIP会员"
+                ],
+                [
+                    "真题视频",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "笔记导出",
+                    "0",
+                    "1",
+                    "1"
+                ],
+                [
+                    "错题导出",
+                    "0",
+                    "1",
+                    "1"
+                ],
+                [
+                    "收藏导出",
+                    "0",
+                    "0",
+                    "1"
+                ]
+            ],
+            "available": 1
+        },
+        "wechat_corpid": "RlWdhUTLnLR4LSk0QYH+GCa441wRh7Qz",
+        "wechat_enterprise_url": "g4Bho1n+Pc+XuVGYTxT+bJ6ghn/CsdBTP3YfAKAO9i4hlJnjSfwS/mquDqIbBNQ9UqAQnZ8ZS00=",
+        "page_title": "考研"
+    },
+    "server_time": 1672903366
+}

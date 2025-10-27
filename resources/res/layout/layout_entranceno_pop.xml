@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#272727"
+    android:paddingBottom="30dp"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/close"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/closenew2"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="#ec9a8d"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="审核未通过，请重新提交"
+        android:drawableLeft="@drawable/nosimg"
+        android:drawablePadding="10dp"
+        android:layout_below="@+id/close"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="#d8d8d8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="请确保截图重要信息清晰可见、\10真实有效，且与志愿信息一致"
+        android:layout_below="@+id/title"
+        android:layout_alignLeft="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:lineSpacingExtra="1.2dp"/>
+</RelativeLayout>

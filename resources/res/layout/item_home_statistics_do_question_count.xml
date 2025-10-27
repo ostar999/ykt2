@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/sp_20"
+    android:textStyle="bold"
+    android:textColor="?attr/main_theme_color"
+    android:background="@drawable/bg_home_statistics_do_question_num"
+    android:padding="@dimen/dp_6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_6"/>

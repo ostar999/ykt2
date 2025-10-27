@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/appimg"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:src="@drawable/question_posting"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/app_theme_red"
+        android:gravity="center"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/tips"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:text="已连续打卡好几天"/>
+    <ImageView
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/close"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:src="@drawable/close_ad_web"/>
+</FrameLayout>

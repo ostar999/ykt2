@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="90dp"
+    android:width="253dp"
+    android:viewportWidth="253"
+    android:viewportHeight="90">
+    <group>
+        <clip-path android:pathData="M0,0h253v90h-253z"/>
+        <path
+            android:fillColor="#32232e"
+            android:pathData="M8,0C8,4.42 4.42,8 0,8C-4.42,8 -8,4.42 -8,0H-82C-86.42,0 -90,3.58 -90,8V82C-90,86.42 -86.42,90 -82,90H-8C-8,85.58 -4.42,82 0,82C4.42,82 8,85.58 8,90H245C249.42,90 253,86.42 253,82V8C253,3.58 249.42,0 245,0H8Z"
+            android:fillType="evenOdd"/>
+        <group>
+            <clip-path
+                android:pathData="M8,0C8,4.42 4.42,8 0,8C-4.42,8 -8,4.42 -8,0H-82C-86.42,0 -90,3.58 -90,8V82C-90,86.42 -86.42,90 -82,90H-8C-8,85.58 -4.42,82 0,82C4.42,82 8,85.58 8,90H245C249.42,90 253,86.42 253,82V8C253,3.58 249.42,0 245,0H8Z"
+                android:fillType="evenOdd"/>
+            <path
+                android:fillColor="#422a33"
+                android:pathData="M8,0V-0.5H7.5V0H8ZM-8,0H-7.5V-0.5H-8V0ZM-8,90V90.5H-7.5V90H-8ZM8,90H7.5V90.5H8V90ZM0,8V8.5C4.69,8.5 8.5,4.69 8.5,0H8H7.5C7.5,4.14 4.14,7.5 0,7.5V8ZM-8,0H-8.5C-8.5,4.69 -4.69,8.5 0,8.5V8V7.5C-4.14,7.5 -7.5,4.14 -7.5,0H-8ZM-82,0V0.5H-8V0V-0.5H-82V0ZM-90,8H-89.5C-89.5,3.86 -86.14,0.5 -82,0.5V0V-0.5C-86.69,-0.5 -90.5,3.31 -90.5,8H-90ZM-90,82H-89.5V8H-90H-90.5V82H-90ZM-82,90V89.5C-86.14,89.5 -89.5,86.14 -89.5,82H-90H-90.5C-90.5,86.69 -86.69,90.5 -82,90.5V90ZM-8,90V89.5H-82V90V90.5H-8V90ZM-8,90H-7.5C-7.5,85.86 -4.14,82.5 0,82.5V82V81.5C-4.69,81.5 -8.5,85.31 -8.5,90H-8ZM0,82V82.5C4.14,82.5 7.5,85.86 7.5,90H8H8.5C8.5,85.31 4.69,81.5 0,81.5V82ZM245,90V89.5H8V90V90.5H245V90ZM253,82H252.5C252.5,86.14 249.14,89.5 245,89.5V90V90.5C249.69,90.5 253.5,86.69 253.5,82H253ZM253,8H252.5V82H253H253.5V8H253ZM245,0V0.5C249.14,0.5 252.5,3.86 252.5,8H253H253.5C253.5,3.31 249.69,-0.5 245,-0.5V0ZM8,0V0.5H245V0V-0.5H8V0Z"/>
+        </group>
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M0.5,9V81"
+            android:strokeColor="#5a333c"
+            android:strokeWidth="0.5"
+            android:strokeAlpha="0.4"/>
+    </group>
+</vector>

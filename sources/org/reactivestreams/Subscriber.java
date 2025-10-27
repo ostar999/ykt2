@@ -1,0 +1,12 @@
+package org.reactivestreams;
+
+/* loaded from: classes9.dex */
+public interface Subscriber<T> {
+    void onComplete();
+
+    void onError(Throwable th);
+
+    void onNext(T t2);
+
+    void onSubscribe(Subscription subscription);
+}

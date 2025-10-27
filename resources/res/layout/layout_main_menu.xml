@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_circle_topic_detail_popup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/menu_main_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="80dp">
+        <TextView
+            android:textSize="@dimen/sub_contenr_text_size"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:padding="@dimen/content_item_padding_small"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reply_me"/>
+        <View
+            android:background="@color/color_divider"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/divider_height"/>
+        <Button
+            android:id="@+id/menu_tiku"
+            android:background="@drawable/menu_item_btn_bkg"
+            android:text="@string/tiku_label"
+            style="@style/menuItemStyle"/>
+        <Button
+            android:id="@+id/menu_bbs"
+            android:background="@drawable/menu_item_btn_bkg"
+            android:text="@string/bbs_label"
+            style="@style/menuItemStyle"/>
+    </LinearLayout>
+</RelativeLayout>

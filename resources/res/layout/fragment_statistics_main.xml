@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/new_bg_one_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cn.webdemo.com.supporfragment.tablayout.MagicIndicator
+        android:layout_gravity="center"
+        android:id="@+id/magic_indicator"
+        android:padding="@dimen/dp_2"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginHorizontal="@dimen/dp_16"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

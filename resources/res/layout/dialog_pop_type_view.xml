@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shape_white_corners_12"
+    android:clipChildren="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:clipChildren="false"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:textSize="@dimen/sp_15"
+            android:textColor="?attr/first_txt_color"
+            android:gravity="center"
+            android:id="@+id/tv_zhuan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:text="专硕"/>
+        <View style="@style/new_gray_line_style"/>
+        <TextView
+            android:textSize="@dimen/sp_15"
+            android:textColor="?attr/first_txt_color"
+            android:gravity="center"
+            android:id="@+id/tv_xue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:text="学硕"/>
+    </LinearLayout>
+</LinearLayout>

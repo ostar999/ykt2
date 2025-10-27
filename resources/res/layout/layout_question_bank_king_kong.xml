@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_12">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpKingKong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.psychiatrygarden.widget.ViewPager2Indicator
+        android:layout_gravity="center"
+        android:id="@+id/tree_indicator"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_4"
+        android:layout_marginTop="@dimen/dp_12"/>
+</LinearLayout>

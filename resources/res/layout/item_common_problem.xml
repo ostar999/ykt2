@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_16"
+    android:layout_marginRight="@dimen/dp_16"
+    android:layout_marginHorizontal="@dimen/dp_16">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/shape_write_bg_corners_12"
+        android:paddingLeft="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_18"
+        android:paddingBottom="@dimen/dp_18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dp_18">
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            android:textColor="?attr/first_txt_color"
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q:答题记录丢失?"/>
+        <TextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="?attr/second_txt_color"
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:text="App内考点顺序/考点乱序/历年真题下题目的答题记录是互通的，即在考点顺序作答后，在考点乱序和历年真题下的该题也会同步显示答案; 同理，在历年真题清除答题记录后 (重做)考点顺序和考点乱序下的该题也会被清除 (重做) ; 还有，在错题/笔记/收藏等中重做题目，对应的考点顺序、考点乱序和历年真题下的该题，答题记录也会被清除。"/>
+    </LinearLayout>
+</RelativeLayout>

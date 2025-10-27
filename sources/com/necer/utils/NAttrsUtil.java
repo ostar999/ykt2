@@ -1,0 +1,150 @@
+package com.necer.utils;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
+import android.util.AttributeSet;
+import androidx.core.content.ContextCompat;
+import com.necer.R;
+import com.necer.enumeration.CalendarState;
+import com.umeng.analytics.pro.d;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0018\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\b¨\u0006\t"}, d2 = {"Lcom/necer/utils/NAttrsUtil;", "", "()V", "setAttrs", "", d.R, "Landroid/content/Context;", "attributeSet", "Landroid/util/AttributeSet;", "ncalendar_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes4.dex */
+public final class NAttrsUtil {
+
+    @NotNull
+    public static final NAttrsUtil INSTANCE = new NAttrsUtil();
+
+    private NAttrsUtil() {
+    }
+
+    public final void setAttrs(@NotNull Context context, @Nullable AttributeSet attributeSet) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, R.styleable.NCalendar);
+        Intrinsics.checkNotNullExpressionValue(typedArrayObtainStyledAttributes, "context.obtainStyledAttr…t, R.styleable.NCalendar)");
+        NAttrs nAttrs = NAttrs.INSTANCE;
+        int i2 = R.styleable.NCalendar_todayCheckedBackground;
+        int i3 = R.drawable.check_bg_svg;
+        nAttrs.setTodayCheckedBackground(typedArrayObtainStyledAttributes.getResourceId(i2, i3));
+        nAttrs.setTodayUnCheckedBackground(typedArrayObtainStyledAttributes.getResourceId(R.styleable.NCalendar_todayUnCheckedBackground, R.drawable.today_uncheck_bg_svg));
+        nAttrs.setDefaultCheckedBackground(typedArrayObtainStyledAttributes.getResourceId(R.styleable.NCalendar_defaultCheckedBackground, i3));
+        nAttrs.setDefaultUnCheckedBackground(typedArrayObtainStyledAttributes.getResourceId(R.styleable.NCalendar_defaultUnCheckedBackground, R.drawable.uncheck_bg_svg_new));
+        int i4 = R.styleable.NCalendar_todayCheckedSolarTextColor;
+        int i5 = R.color.N_white;
+        nAttrs.setTodayCheckedSolarTextColor(typedArrayObtainStyledAttributes.getColor(i4, ContextCompat.getColor(context, i5)));
+        int i6 = R.styleable.NCalendar_todayUnCheckedSolarTextColor;
+        int i7 = R.color.N_todaySolarUnCheckedTextColor;
+        nAttrs.setTodayUnCheckedSolarTextColor(typedArrayObtainStyledAttributes.getColor(i6, ContextCompat.getColor(context, i7)));
+        int i8 = R.styleable.NCalendar_defaultCheckedSolarTextColor;
+        int i9 = R.color.N_defaultSolarTextColor;
+        nAttrs.setDefaultCheckedSolarTextColor(typedArrayObtainStyledAttributes.getColor(i8, ContextCompat.getColor(context, i9)));
+        nAttrs.setDefaultUnCheckedSolarTextColor(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_defaultUnCheckedSolarTextColor, ContextCompat.getColor(context, i9)));
+        nAttrs.setSolarTextSize(typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_solarTextSize, context.getResources().getDimension(R.dimen.N_solarTextSize)));
+        nAttrs.setWeekBarTextSize(typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_weekBarTextSize, context.getResources().getDimension(R.dimen.N_weekBarTextSize)));
+        int i10 = R.styleable.NCalendar_solarTextBold;
+        Resources resources = context.getResources();
+        int i11 = R.bool.N_textBold;
+        nAttrs.setSolarTextBold(typedArrayObtainStyledAttributes.getBoolean(i10, resources.getBoolean(i11)));
+        int i12 = R.styleable.NCalendar_showLunar;
+        nAttrs.setShowLunar(typedArrayObtainStyledAttributes.getBoolean(i12, context.getResources().getBoolean(R.bool.N_showLunar)));
+        nAttrs.setTodayCheckedLunarTextColor(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_todayCheckedLunarTextColor, ContextCompat.getColor(context, i5)));
+        nAttrs.setTodayUnCheckedLunarTextColor(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_todayUnCheckedLunarTextColor, ContextCompat.getColor(context, R.color.N_todayCheckedColor)));
+        int i13 = R.styleable.NCalendar_defaultCheckedLunarTextColor;
+        int i14 = R.color.N_defaultLunarTextColor;
+        nAttrs.setDefaultCheckedLunarTextColor(typedArrayObtainStyledAttributes.getColor(i13, ContextCompat.getColor(context, i14)));
+        nAttrs.setDefaultUnCheckedLunarTextColor(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_defaultUnCheckedLunarTextColor, ContextCompat.getColor(context, i14)));
+        nAttrs.setLunarTextSize(typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_lunarTextSize, context.getResources().getDimension(R.dimen.N_lunarTextSize)));
+        nAttrs.setLunarTextBold(typedArrayObtainStyledAttributes.getBoolean(R.styleable.NCalendar_lunarTextBold, context.getResources().getBoolean(i11)));
+        nAttrs.setLunarDistance(typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_lunarDistance, context.getResources().getDimension(R.dimen.N_lunarDistance)));
+        nAttrs.setPointLocation(typedArrayObtainStyledAttributes.getInt(R.styleable.NCalendar_pointLocation, 200));
+        nAttrs.setPointDistance(typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_pointDistance, context.getResources().getDimension(R.dimen.N_pointDistance)));
+        nAttrs.setTodayCheckedPoint(typedArrayObtainStyledAttributes.getResourceId(R.styleable.NCalendar_todayCheckedPoint, R.drawable.n_point_checked_today));
+        nAttrs.setTodayUnCheckedPoint(typedArrayObtainStyledAttributes.getResourceId(R.styleable.NCalendar_todayUnCheckedPoint, R.drawable.n_point_unchecked_today));
+        nAttrs.setDefaultCheckedPoint(typedArrayObtainStyledAttributes.getResourceId(R.styleable.NCalendar_defaultCheckedPoint, R.drawable.n_point_checked_default));
+        nAttrs.setDefaultUnCheckedPoint(typedArrayObtainStyledAttributes.getResourceId(R.styleable.NCalendar_defaultUnCheckedPoint, R.drawable.n_point_unchecked_default));
+        nAttrs.setShowHolidayWorkday(typedArrayObtainStyledAttributes.getBoolean(R.styleable.NCalendar_showHolidayWorkday, context.getResources().getBoolean(R.bool.N_showHolidayWorkday)));
+        nAttrs.setDefaultCheckedFirstDate(typedArrayObtainStyledAttributes.getBoolean(R.styleable.NCalendar_defaultCheckedFirstDate, context.getResources().getBoolean(R.bool.N_defaultCheckedFirstDate)));
+        nAttrs.setTodayCheckedHoliday(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_todayCheckedHoliday));
+        nAttrs.setTodayUnCheckedHoliday(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_todayUnCheckedHoliday));
+        nAttrs.setDefaultCheckedHoliday(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_defaultCheckedHoliday));
+        nAttrs.setDefaultUnCheckedHoliday(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_defaultUnCheckedHoliday));
+        nAttrs.setTodayCheckedWorkday(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_todayCheckedWorkday));
+        nAttrs.setTodayUnCheckedWorkday(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_todayUnCheckedWorkday));
+        nAttrs.setDefaultCheckedWorkday(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_defaultCheckedWorkday));
+        nAttrs.setDefaultUnCheckedWorkday(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_defaultUnCheckedWorkday));
+        nAttrs.setHolidayWorkdayTextSize(typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_holidayWorkdayTextSize, context.getResources().getDimension(R.dimen.N_holidayWorkdayTextSize)));
+        nAttrs.setHolidayWorkdayTextBold(typedArrayObtainStyledAttributes.getBoolean(R.styleable.NCalendar_holidayWorkdayTextBold, context.getResources().getBoolean(i11)));
+        nAttrs.setHolidayWorkdayDistance(typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_holidayWorkdayDistance, context.getResources().getDimension(R.dimen.N_holidayWorkdayDistance)));
+        nAttrs.setHolidayWorkdayLocation(typedArrayObtainStyledAttributes.getInt(R.styleable.NCalendar_holidayWorkdayLocation, 400));
+        nAttrs.setHolidayText(typedArrayObtainStyledAttributes.getString(R.styleable.NCalendar_holidayText));
+        nAttrs.setWorkdayText(typedArrayObtainStyledAttributes.getString(R.styleable.NCalendar_workdayText));
+        nAttrs.setTodayCheckedHolidayTextColor(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_todayCheckedHolidayTextColor, ContextCompat.getColor(context, i5)));
+        int i15 = R.styleable.NCalendar_todayUnCheckedHolidayTextColor;
+        int i16 = R.color.N_holidayTextColor;
+        nAttrs.setTodayUnCheckedHolidayTextColor(typedArrayObtainStyledAttributes.getColor(i15, ContextCompat.getColor(context, i16)));
+        nAttrs.setDefaultCheckedHolidayTextColor(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_defaultCheckedHolidayTextColor, ContextCompat.getColor(context, i16)));
+        nAttrs.setDefaultUnCheckedHolidayTextColor(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_defaultUnCheckedHolidayTextColor, ContextCompat.getColor(context, i16)));
+        nAttrs.setTodayCheckedWorkdayTextColor(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_todayCheckedWorkdayTextColor, ContextCompat.getColor(context, i5)));
+        int i17 = R.styleable.NCalendar_todayUnCheckedWorkdayTextColor;
+        int i18 = R.color.N_workdayTextColor;
+        nAttrs.setTodayUnCheckedWorkdayTextColor(typedArrayObtainStyledAttributes.getColor(i17, ContextCompat.getColor(context, i18)));
+        nAttrs.setDefaultCheckedWorkdayTextColor(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_defaultCheckedWorkdayTextColor, ContextCompat.getColor(context, i18)));
+        nAttrs.setDefaultUnCheckedWorkdayTextColor(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_defaultUnCheckedWorkdayTextColor, ContextCompat.getColor(context, i18)));
+        nAttrs.setShowNumberBackground(typedArrayObtainStyledAttributes.getBoolean(R.styleable.NCalendar_showNumberBackground, context.getResources().getBoolean(R.bool.N_showNumberBackground)));
+        nAttrs.setNumberBackgroundTextSize(typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_numberBackgroundTextSize, context.getResources().getDimension(R.dimen.N_numberBackgroundTextSize)));
+        nAttrs.setNumberBackgroundTextColor(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_numberBackgroundTextColor, ContextCompat.getColor(context, i7)));
+        nAttrs.setWeekBarTextColor(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_weekBarTextColor, ContextCompat.getColor(context, R.color.N_weekBarTextColor)));
+        nAttrs.setWeekBarBackgroundColor(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_weekBarBackgroundColor, ContextCompat.getColor(context, R.color.N_weekBarBackgroundColor)));
+        nAttrs.setBackgroundAlphaColor(typedArrayObtainStyledAttributes.getInt(R.styleable.NCalendar_backgroundAlphaColor, context.getResources().getInteger(R.integer.N_backgroundAlphaColor)));
+        nAttrs.setFirstDayOfWeek(typedArrayObtainStyledAttributes.getInt(R.styleable.NCalendar_firstDayOfWeek, 300));
+        nAttrs.setAllMonthSixLine(typedArrayObtainStyledAttributes.getBoolean(R.styleable.NCalendar_allMonthSixLine, context.getResources().getBoolean(R.bool.N_allMonthSixLine)));
+        nAttrs.setLastNextMonthClickEnable(typedArrayObtainStyledAttributes.getBoolean(R.styleable.NCalendar_lastNextMonthClickEnable, context.getResources().getBoolean(R.bool.N_lastNextMonthClickEnable)));
+        nAttrs.setHorizontalScrollEnable(typedArrayObtainStyledAttributes.getBoolean(R.styleable.NCalendar_horizontalScrollEnable, context.getResources().getBoolean(R.bool.N_horizontalScrollEnable)));
+        nAttrs.setCalendarBackground(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_calendarBackground));
+        nAttrs.setLastNextMothAlphaColor(typedArrayObtainStyledAttributes.getInt(R.styleable.NCalendar_lastNextMothAlphaColor, context.getResources().getInteger(R.integer.N_lastNextMothAlphaColor)));
+        nAttrs.setDisabledAlphaColor(typedArrayObtainStyledAttributes.getInt(R.styleable.NCalendar_disabledAlphaColor, context.getResources().getInteger(R.integer.N_disabledAlphaColor)));
+        nAttrs.setDisabledString(typedArrayObtainStyledAttributes.getString(R.styleable.NCalendar_disabledString));
+        nAttrs.setDefaultCalendar(typedArrayObtainStyledAttributes.getInt(R.styleable.NCalendar_defaultCalendar, CalendarState.MONTH.getValue()));
+        nAttrs.setCalendarHeight((int) typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_calendarHeight, context.getResources().getDimension(R.dimen.N_calendarHeight)));
+        nAttrs.setWeekBarHeight((int) typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_weekBarHeight, context.getResources().getDimension(R.dimen.N_weekBarHeight)));
+        nAttrs.setAnimationDuration(typedArrayObtainStyledAttributes.getInt(R.styleable.NCalendar_animationDuration, context.getResources().getInteger(R.integer.N_animationDuration)));
+        nAttrs.setStretchCalendarEnable(typedArrayObtainStyledAttributes.getBoolean(R.styleable.NCalendar_stretchCalendarEnable, context.getResources().getBoolean(R.bool.N_stretchCalendarEnable)));
+        nAttrs.setStretchCalendarHeight((int) typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_stretchCalendarHeight, context.getResources().getDimension(R.dimen.N_stretchCalendarHeight)));
+        nAttrs.setStretchTextSize(typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_stretchTextSize, context.getResources().getDimension(R.dimen.N_stretchTextSize)));
+        nAttrs.setStretchTextBold(typedArrayObtainStyledAttributes.getBoolean(R.styleable.NCalendar_stretchTextBold, context.getResources().getBoolean(i11)));
+        int i19 = R.styleable.NCalendar_stretchTextColor;
+        int i20 = R.color.N_stretchTextColor;
+        nAttrs.setStretchTextColor(typedArrayObtainStyledAttributes.getColor(i19, ContextCompat.getColor(context, i20)));
+        nAttrs.setStretchTextDistance(typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_stretchTextDistance, context.getResources().getDimension(R.dimen.N_stretchTextDistance)));
+        nAttrs.setPaddingHorizontalCalendar(typedArrayObtainStyledAttributes.getDimension(R.styleable.NCalendar_paddingHorizontalCalendar, context.getResources().getDimension(R.dimen.N_paddingHorizontalCalendar)));
+        nAttrs.setDefaultShowLunar(typedArrayObtainStyledAttributes.getBoolean(i12, true));
+        nAttrs.setClickNotCurrentPageMonthCanJump(typedArrayObtainStyledAttributes.getBoolean(R.styleable.NCalendar_clickNotCurrentPageMonthCanJump, true));
+        nAttrs.setDailyCalendarStyle(typedArrayObtainStyledAttributes.getBoolean(R.styleable.NCalendar_dailyTaskStyle, false));
+        nAttrs.setDailyCalendarNoTaskTimeItemBg(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_defaultDailyStyleDefBg));
+        int i21 = R.styleable.NCalendar_dailyTaskCalendarFinishBg;
+        nAttrs.setDailyTaskCalendarFinishBg(typedArrayObtainStyledAttributes.getDrawable(i21));
+        nAttrs.setDailyTaskCalendarSelectHaveTaskBg(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarSelectHaveTaskBg));
+        nAttrs.setDailyTaskCalendarSelectNoTaskBg(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarSelectNoTaskBg));
+        nAttrs.setDailyTaskCalendarTaskFailBg(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarTaskFailBg));
+        nAttrs.setDailyTaskCalendarTaskToDoBg(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarTaskToDoBg));
+        nAttrs.setDailyTaskCalendarToDayNoSelectHaveTaskBg(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarToDayNoSelectHaveTaskBg));
+        nAttrs.setDailyTaskCalendarToDayNoSelectNoTaskBg(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarToDayNoSelectNoTaskBg));
+        nAttrs.setDailyTaskCalendarToDayNoSelectTaskToDoBg(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarToDayNoSelectTaskToDoBg));
+        nAttrs.setDailyTaskCalendarSelectFinishTaskBg(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarSelectFinishTaskBg));
+        nAttrs.setDailyTaskCalendarSelectTodoTaskBg(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarSelectTodoTaskBg));
+        nAttrs.setDailyTaskCalendarSelectFailTaskBg(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarSelectFailTaskBg));
+        nAttrs.setDailyTaskCalendarFinishTextColor(Integer.valueOf(typedArrayObtainStyledAttributes.getColor(R.styleable.NCalendar_dailyTaskCalendarFinishTextColor, ContextCompat.getColor(context, i20))));
+        nAttrs.setDailyTaskCalendarFinishBg(typedArrayObtainStyledAttributes.getDrawable(i21));
+        nAttrs.setDailyTaskCalendarToDoBg(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarToDoBg));
+        nAttrs.setDailyTaskCalendarTodayBg(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarTodayBg));
+        nAttrs.setDailyTaskCalendarFinishPoint(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarFinishPoint));
+        nAttrs.setDailyTaskCalendarToDoPoint(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarToDoPoint));
+        nAttrs.setDailyTaskCalendarNoTaskPoint(typedArrayObtainStyledAttributes.getDrawable(R.styleable.NCalendar_dailyTaskCalendarNoTaskPoint));
+        typedArrayObtainStyledAttributes.recycle();
+    }
+}

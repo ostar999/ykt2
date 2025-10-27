@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_52"
+    android:paddingStart="16dp">
+    <com.ruffian.library.widget.RTextView
+        android:textSize="@dimen/sp_15"
+        android:ellipsize="end"
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/dp_24"
+        app:text_color_normal="@color/color_303030"
+        app:text_color_selected="@color/color_dd594a"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/color_bfbfbf"
+            android:id="@+id/tv_word_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/img_lock"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/icon_chapter_lock"
+            android:contentDescription="@null"/>
+    </FrameLayout>
+</LinearLayout>

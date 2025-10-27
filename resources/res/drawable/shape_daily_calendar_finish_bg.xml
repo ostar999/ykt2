@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/daily_calendar_finish_day_bg_color"/>
+    <size
+        android:height="@dimen/dp_56"
+        android:width="@dimen/dp_37"/>
+</shape>

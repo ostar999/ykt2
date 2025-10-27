@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgv"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="@dimen/dp_130"
+        android:layout_marginTop="@dimen/dp_160"
+        android:src="@drawable/main_guide_2"
+        android:layout_marginStart="@dimen/dp_310"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.noober.background.view.BLTextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/color_white"
+        android:gravity="center"
+        android:id="@+id/nextTv"
+        android:layout_width="@dimen/dp_78"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="@string/common_next"
+        app:bl_corners_radius="@dimen/dp_4"
+        app:bl_solid_color="@color/c_36ffffff"
+        app:bl_stroke_color="@color/color_white"
+        app:bl_stroke_width="@dimen/dp_1"
+        app:layout_constraintEnd_toEndOf="@+id/imgv"
+        app:layout_constraintStart_toStartOf="@+id/imgv"
+        app:layout_constraintTop_toBottomOf="@+id/imgv"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridView
+        android:id="@+id/gv_year"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:numColumns="1"/>
+    <ImageView
+        android:textColor="@color/gray_font"
+        android:id="@+id/tv_empty"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="?attr/ic_empty_data_normal"
+        android:text="暂无数据"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

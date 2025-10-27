@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/layout_top"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_alignParentTop="true">
+    <ImageView
+        android:layout_gravity="left"
+        android:id="@+id/iv_back"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_back"/>
+    <TextView
+        android:textSize="16dp"
+        android:textColor="@color/alivc_common_font_white_light"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alivc_player_settings_title"
+        android:singleLine="true"/>
+</FrameLayout>

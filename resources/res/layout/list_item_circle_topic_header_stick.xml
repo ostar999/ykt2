@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:background="@color/color_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/view_divider"
+        android:background="@color/gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/content_item_padding"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:textSize="@dimen/sub_contenr_text_size"
+        android:textColor="#ea6161"
+        android:id="@+id/tv_stick_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/content_item_padding_large"
+        android:text="@string/stick_label"
+        android:layout_below="@+id/view_divider"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:textSize="@dimen/content_text_size"
+        android:textColor="@color/color_59"
+        android:id="@+id/tv_stick_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/content_item_padding_small"
+        android:layout_marginTop="@dimen/content_item_padding"
+        android:layout_marginRight="@dimen/content_item_padding_large"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/tv_stick_label"
+        android:layout_below="@+id/view_divider"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

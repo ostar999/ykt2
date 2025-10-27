@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:background="?attr/app_theme"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:textSize="16sp"
+            android:textColor="?attr/app_title_color"
+            android:id="@+id/txt_actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="群聊"
+            android:singleLine="true"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/iv_chat_group_add"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/chat_group_home_add"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/frame_chat"
+        android:background="?attr/app_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

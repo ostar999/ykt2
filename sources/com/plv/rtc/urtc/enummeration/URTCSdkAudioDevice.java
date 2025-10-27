@@ -1,0 +1,10 @@
+package com.plv.rtc.urtc.enummeration;
+
+/* loaded from: classes5.dex */
+public enum URTCSdkAudioDevice {
+    UCLOUD_RTC_SDK_AUDIODEVICE_NONE,
+    UCLOUD_RTC_SDK_AUDIODEVICE_SPEAKER,
+    UCLOUD_RTC_SDK_AUDIODEVICE_WIRED_HEADSET,
+    UCLOUD_RTC_SDK_AUDIODEVICE_EARPIECE,
+    UCLOUD_RTC_SDK_AUDIODEVICE_BLUETOOTH
+}

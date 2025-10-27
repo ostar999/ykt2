@@ -1,0 +1,5 @@
+package com.just.agentweb;
+
+/* loaded from: classes4.dex */
+public class WebViewClient extends MiddlewareWebClientBase {
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/courseDirectoryListRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/courseDirectoryListRecyclerView"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.psychiatrygarden.widget.CustomEmptyView
+        android:id="@+id/emptyView"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

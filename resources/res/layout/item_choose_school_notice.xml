@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/shape_app_bg_corners_12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_8"
+    android:layout_marginRight="@dimen/dp_8"
+    android:layout_marginBottom="@dimen/dp_8"
+    android:layout_marginHorizontal="@dimen/dp_8">
+    <TextView
+        android:textSize="@dimen/sp_15"
+        android:textColor="?attr/first_txt_color"
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:text="2025年专业录取数据更新8000条，2025年专业录取数据更新8000条2025年专业录取数据更新8000条2025年专业录取数据更新8000条2025年专业录取数据更新8000条2025年专业录取数据更新8000条2025年专业录取数据更新8000条2025年专业录取数据更新8000条。"
+        android:layout_marginHorizontal="@dimen/dp_12"/>
+    <TextView
+        android:textSize="@dimen/sp_12"
+        android:textColor="?attr/third_txt_color"
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:text="10:57"
+        android:layout_marginHorizontal="@dimen/dp_12"/>
+</LinearLayout>

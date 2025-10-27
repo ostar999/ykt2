@@ -1,0 +1,19 @@
+package org.wrtca.video;
+
+import org.wrtca.jni.JNINamespace;
+
+@JNINamespace("webrtc::jni")
+/* loaded from: classes9.dex */
+class VP8Encoder extends WrappedNativeVideoEncoder {
+    public static native long nativeCreateEncoder();
+
+    @Override // org.wrtca.video.WrappedNativeVideoEncoder
+    public long createNativeEncoder() {
+        return nativeCreateEncoder();
+    }
+
+    @Override // org.wrtca.video.WrappedNativeVideoEncoder
+    public boolean isSoftwareEncoder() {
+        return true;
+    }
+}

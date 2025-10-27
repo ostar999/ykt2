@@ -1,0 +1,31 @@
+package com.xiaomi.push;
+
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import com.xiaomi.push.al;
+
+/* loaded from: classes6.dex */
+class am extends Handler {
+
+    /* renamed from: a, reason: collision with root package name */
+    final /* synthetic */ al f24606a;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public am(al alVar, Looper looper) {
+        super(looper);
+        this.f24606a = alVar;
+    }
+
+    @Override // android.os.Handler
+    public void handleMessage(Message message) {
+        al.b bVar = (al.b) message.obj;
+        int i2 = message.what;
+        if (i2 == 0) {
+            bVar.a();
+        } else if (i2 == 1) {
+            bVar.mo328c();
+        }
+        super.handleMessage(message);
+    }
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/jad_splash_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/jad_splash_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <FrameLayout
+        android:layout_gravity="bottom"
+        android:id="@+id/click_container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_gravity="bottom"
+        android:id="@+id/jad_logo"
+        android:layout_width="32dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="5dp"/>
+    <TextView
+        android:textSize="11sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_gravity="end|top"
+        android:id="@+id/jad_splash_skip_btn"
+        android:background="@drawable/jad_btn_skip_background_beizi"
+        android:visibility="gone"
+        android:layout_width="57dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="15dp"
+        android:text="跳过 --"
+        android:shadowRadius="3"/>
+</FrameLayout>

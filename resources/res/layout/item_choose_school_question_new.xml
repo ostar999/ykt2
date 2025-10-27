@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_56">
+    <TextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="?attr/first_txt_color"
+        android:ellipsize="end"
+        android:id="@+id/questionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="账号被封禁了怎么办？"
+        android:maxLines="1"
+        android:layout_toLeftOf="@+id/imgMore"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_45"/>
+    <View
+        android:id="@+id/lineBottom"
+        android:background="?attr/new_gray_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:id="@+id/imgMore"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:src="@drawable/icon_right_arrow_mo_kao"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

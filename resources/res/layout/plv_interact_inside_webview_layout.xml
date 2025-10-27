@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/plv_webview_parent"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/plv_close_iv"
+        android:padding="4dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/plv_close_ic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

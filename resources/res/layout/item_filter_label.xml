@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_24">
+    <TextView
+        android:textSize="@dimen/sp_12"
+        android:textColor="?attr/third_txt_color"
+        android:gravity="center"
+        android:id="@+id/tv_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="考点分层"/>
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:textColor="?attr/first_txt_color"
+        android:gravity="center"
+        android:id="@+id/tv_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="A类(必做)"/>
+</LinearLayout>

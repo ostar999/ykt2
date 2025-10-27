@@ -1,0 +1,1 @@
+{"NAME":"file","ENTRY":"fileDexJar:com.tencent.tbs.ug.component.TbsReaderEntry","VERSIONCODE":6000016,"VERSIONNAME":"6000016","FILES":[{"PATH":"file_resource.apk"},{"PATH":"file_cp_resources.apk"},{"PATH":"fileDexJar","PARENT":"BaseComponent:BaseComponentDexJar"}],"NO_SEALED":"false","RESOURCE":"file_resource.apk"}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_8_">
+        <TextView
+            android:id="@+id/tvNumCombineBg"
+            android:background="@drawable/shape_course_directory_num_bg"
+            android:layout_width="@dimen/dp_62"
+            android:layout_height="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_24"/>
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold"
+            android:textColor="?attr/first_txt_color"
+            android:gravity="top|center_horizontal"
+            android:id="@+id/tvNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="01"
+            android:layout_marginStart="@dimen/dp_8"/>
+    </RelativeLayout>
+    <include layout="@layout/item_learn_center"/>
+</LinearLayout>

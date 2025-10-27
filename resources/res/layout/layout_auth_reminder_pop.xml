@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/ffffffff_13"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="?attr/first_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="认证提醒"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="?attr/secondary_text_color"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您确定重新认证身份！"/>
+    <View style="@style/line_style"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:textColor="?attr/first_text_color"
+            android:gravity="center"
+            android:id="@+id/cancel"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_weight="1"/>
+        <View
+            android:background="?attr/line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textColor="?attr/tertiary_text_color"
+            android:gravity="center"
+            android:id="@+id/auth"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="认证"
+            android:layout_weight="1"/> /&gt; 
+    </LinearLayout>
+</LinearLayout>

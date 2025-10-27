@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/layoutRootSearch"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/titlebar_layout"
+        layout="@layout/nav_search_title_view"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lvGoods"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+        <com.psychiatrygarden.widget.CustomEmptyView
+            android:id="@+id/empty_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

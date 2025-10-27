@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/titleBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44">
+        <ImageView
+            android:id="@+id/imgBack"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="?attr/ic_black_back"
+            android:layout_centerVertical="true"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingVertical="5dp"/>
+        <TextView
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            android:textColor="?attr/first_txt_color"
+            android:ellipsize="end"
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:singleLine="true"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewEditOrder"
+        android:background="?attr/new_bg_two_color"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/dp_16"/>
+</LinearLayout>

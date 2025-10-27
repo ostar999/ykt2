@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/ly_all_rank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/sp_13"
+        android:textColor="@drawable/circle_textcolor"
+        android:ellipsize="end"
+        android:id="@+id/tv_all_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年份"
+        android:lines="1"/>
+    <ImageView
+        android:id="@+id/img_all_rank"
+        android:layout_width="@dimen/dp_12"
+        android:layout_height="@dimen/dp_12"
+        android:src="?attr/ic_forum_type_down_arrow"
+        android:layout_marginStart="@dimen/dp_4"/>
+</LinearLayout>

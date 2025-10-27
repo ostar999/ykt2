@@ -1,0 +1,11 @@
+package f;
+
+/* loaded from: classes8.dex */
+public enum h {
+    LOGIC_ENGINE_IDLE,
+    LOGIC_ENGINE_INIT,
+    LOGIC_ENGINE_CONNECTING,
+    LOGIC_ENGINE_CONNECTED,
+    LOGIC_ENGINE_RECONNECTING,
+    LOGIC_ENGINE_ROOM_CLOSED
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/rl_column_ques"
+    android:paddingLeft="@dimen/dp_12"
+    android:paddingRight="@dimen/dp_12"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dp_12">
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="?attr/first_txt_color"
+        android:gravity="center"
+        android:id="@+id/tv_column_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:text="知识点"
+        android:maxLines="1"
+        android:includeFontPadding="false"
+        android:layout_above="@+id/img_choose"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/img_choose"
+        android:layout_width="@dimen/dp_17"
+        android:layout_height="@dimen/dp_7"
+        android:src="?attr/ic_comment_group_tag"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tv_column_name"
+        android:layout_alignEnd="@+id/tv_column_name"/>
+</RelativeLayout>

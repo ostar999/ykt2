@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/chooseSchoolQuestion"
+    android:background="?attr/new_bg_two_color_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="?attr/app_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include layout="@layout/layout_toolbar_common_new"/>
+    </RelativeLayout>
+    <cn.webdemo.com.supporfragment.tablayout.MagicIndicator
+        android:id="@+id/magicIndicator"
+        android:background="?attr/app_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:background="?attr/app_bg"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_58"
+        android:translationZ="@dimen/dp_4">
+        <TextView
+            android:enabled="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="?attr/app_bg"
+            android:gravity="center"
+            android:id="@+id/tvCustomer"
+            android:background="@drawable/bg_download"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_42"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:text="咨询客服"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="@dimen/dp_8"/>
+    </RelativeLayout>
+</LinearLayout>

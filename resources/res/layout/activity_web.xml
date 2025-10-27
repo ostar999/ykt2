@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/webPb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"/>
+    <com.catchpig.mvvm.widget.dsbridge.DWebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_2"/>
+    <FrameLayout
+        android:id="@+id/fl"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

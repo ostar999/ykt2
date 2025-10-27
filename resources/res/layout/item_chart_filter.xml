@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/sp_12"
+    android:textStyle="normal"
+    android:textColor="@drawable/color_item_chart_filter_text"
+    android:gravity="center"
+    android:background="@drawable/bg_item_chart_filter"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_32"
+    android:layout_marginLeft="@dimen/dp_12"
+    android:layout_marginTop="@dimen/dp_12"
+    android:textAlignment="center"/>

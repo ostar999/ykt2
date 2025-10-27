@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_category_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.psychiatrygarden.widget.NestedRecyclerView
+            android:orientation="horizontal"
+            android:id="@+id/rvCategoryChild"
+            android:paddingLeft="@dimen/dp_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_8"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <ImageView
+            android:id="@+id/iv_question_sort"
+            android:padding="@dimen/dp_7"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="?attr/menu_question_sort_icon"
+            android:layout_alignTop="@+id/rvCategoryChild"
+            android:layout_alignBottom="@+id/rvCategoryChild"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/iv_question_sort_line"
+            android:background="?attr/column_showdow"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toLeftOf="@+id/iv_question_sort"/>
+    </RelativeLayout>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_category_child"/>
+</RelativeLayout>

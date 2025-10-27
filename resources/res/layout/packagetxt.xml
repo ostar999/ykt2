@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/lineitem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@drawable/text_color"
+        android:id="@+id/tv"
+        android:background="?attr/tag_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="选项"/>
+    <ImageView
+        android:id="@+id/tuijainimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/tuijainimg"
+        android:scaleType="fitCenter"/>
+</LinearLayout>

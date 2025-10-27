@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_86"
+    android:layout_marginTop="@dimen/dp_20">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_img"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_70"
+        android:src="@mipmap/ic_order_default"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/dp_8"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_70"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_toRightOf="@+id/iv_img">
+        <TextView
+            android:textSize="@dimen/sp_12"
+            android:textColor="?attr/third_txt_color"
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5分钟前"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:textSize="@dimen/sp_15"
+            android:textColor="?attr/first_txt_color"
+            android:ellipsize="end"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:background="?attr/new_bg_one_border_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

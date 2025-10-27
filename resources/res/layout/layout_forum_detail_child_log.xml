@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="?attr/first_text_color"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名字"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="?attr/tertiary_text_color"
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="时间"
+        android:layout_below="@+id/title"/>
+    <TextView
+        android:textColor="?attr/first_text_color"
+        android:id="@+id/daytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天数"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

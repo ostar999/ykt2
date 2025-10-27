@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <cn.webdemo.com.supporfragment.tablayout.MagicIndicator
+        android:id="@+id/magic_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"/>
+    <ImageView
+        android:id="@+id/tv_try_see"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_200"
+        android:layout_marginTop="@dimen/dp_2"
+        android:src="?attr/try_see"/>
+    <View
+        android:layout_gravity="bottom"
+        android:background="?attr/new_bg_one_border_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</FrameLayout>

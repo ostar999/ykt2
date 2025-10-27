@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/layoutRoot"
+    android:background="@drawable/shape_write_bg"
+    android:padding="@dimen/dp_16"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_16"
+    android:layout_marginRight="@dimen/dp_16"
+    android:layout_marginHorizontal="@dimen/dp_16">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/orderGiftImg"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_72"
+        android:src="@mipmap/ic_order_default"
+        android:scaleType="fitXY"
+        app:riv_corner_radius="@dimen/dp_12"/>
+    <TextView
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold"
+        android:textColor="?attr/first_txt_color"
+        android:ellipsize="end"
+        android:id="@+id/tvGiftTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2026考研一课通(全年班)2026考研一课通(全年班)2026考研一课通(全年班)2026考研一课通(全年班)"
+        android:maxLines="2"
+        android:layout_toRightOf="@+id/orderGiftImg"
+        android:layout_marginStart="@dimen/dp_8"/>
+    <TextView
+        android:textSize="@dimen/sp_12"
+        android:textColor="?attr/third_txt_color"
+        android:ellipsize="end"
+        android:id="@+id/tvGiftNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="x1"
+        android:maxLines="1"
+        android:layout_toRightOf="@+id/orderGiftImg"
+        android:layout_alignBottom="@+id/orderGiftImg"
+        android:layout_marginStart="@dimen/dp_8"/>
+</RelativeLayout>

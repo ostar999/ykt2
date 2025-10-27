@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/gray_line_126"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="16sp"
+        android:textColor="?attr/question_color"
+        android:gravity="center_vertical"
+        android:id="@+id/order_new"
+        android:background="?attr/bg_backgroud"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="我的订单"
+        android:drawableRight="?attr/icon_indicator_right"/>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp">
+    <EditText
+        android:textSize="12sp"
+        android:textColor="?attr/question_color"
+        android:textColorHint="?attr/write_comment_hint"
+        android:gravity="center"
+        android:id="@+id/et_input"
+        android:background="?attr/combine_question_item_bg"
+        android:paddingLeft="30dp"
+        android:paddingTop="6dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="6dp"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:hint="自定义"
+        android:inputType="number"
+        android:layout_marginEnd="10dp"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="6dp"/>
+</LinearLayout>

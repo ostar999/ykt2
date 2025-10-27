@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_question_top_ad"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_114">
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/iv_ad_close"
+        android:padding="7dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ad_question_top_delete"
+        android:layout_alignTop="@+id/banner"
+        android:layout_marginEnd="20dp"
+        android:layout_alignEnd="@+id/banner"/>
+</RelativeLayout>

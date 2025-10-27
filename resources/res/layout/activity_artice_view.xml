@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/bg_backgroud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="?attr/app_theme"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/include_btn_left"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="?attr/icon_back"
+            android:layout_centerVertical="true"
+            android:paddingStart="15dp"
+            android:paddingEnd="22dp"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="?attr/app_title_color"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="预览"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/activity_headercircle"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

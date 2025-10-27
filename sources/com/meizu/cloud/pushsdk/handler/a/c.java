@@ -1,0 +1,197 @@
+package com.meizu.cloud.pushsdk.handler.a;
+
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.SystemClock;
+import android.text.TextUtils;
+import androidx.core.app.NotificationCompat;
+import com.meizu.cloud.pushinternal.DebugLogger;
+import com.meizu.cloud.pushsdk.NotificationService;
+import com.meizu.cloud.pushsdk.constants.PushConstants;
+import com.meizu.cloud.pushsdk.handler.MessageV3;
+import com.meizu.cloud.pushsdk.handler.MzPushMessage;
+import com.meizu.cloud.pushsdk.notification.PushNotificationBuilder;
+import com.meizu.cloud.pushsdk.notification.model.styleenum.BaseStyleModel;
+import com.meizu.cloud.pushsdk.notification.model.styleenum.InnerStyleLayout;
+import com.meizu.cloud.pushsdk.util.MinSdkChecker;
+import com.meizu.cloud.pushsdk.util.MzSystemUtils;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/* loaded from: classes4.dex */
+public class c extends a<MessageV3> {
+    public c(Context context, com.meizu.cloud.pushsdk.handler.a aVar) {
+        super(context, aVar);
+    }
+
+    private String i(MessageV3 messageV3) {
+        String selfDefineContentString = MzPushMessage.fromMessageV3(messageV3).getSelfDefineContentString();
+        if (!TextUtils.isEmpty(selfDefineContentString)) {
+            try {
+                return new JSONObject(selfDefineContentString).getString("package_name");
+            } catch (JSONException unused) {
+                DebugLogger.e("AbstractMessageHandler", "no quick json message");
+            }
+        }
+        return null;
+    }
+
+    @Override // com.meizu.cloud.pushsdk.handler.c
+    public int a() {
+        return 4;
+    }
+
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // com.meizu.cloud.pushsdk.handler.a.a
+    public void a(MessageV3 messageV3, com.meizu.cloud.pushsdk.notification.c cVar) {
+        if (cVar != null) {
+            cVar.e(messageV3);
+            b(messageV3);
+        }
+    }
+
+    @Override // com.meizu.cloud.pushsdk.handler.c
+    public boolean a(Intent intent) {
+        DebugLogger.i("AbstractMessageHandler", "start MessageV3Handler match");
+        if (!a(0, g(intent))) {
+            return false;
+        }
+        if (PushConstants.MZ_PUSH_ON_MESSAGE_ACTION.equals(intent.getAction()) && PushConstants.MZ_PUSH_MESSAGE_METHOD_ACTION_NOTIFICATION_SHOW_V3.equals(i(intent))) {
+            return true;
+        }
+        if (TextUtils.isEmpty(i(intent))) {
+            String stringExtra = intent.getStringExtra("message");
+            if (!TextUtils.isEmpty(stringExtra) && a(stringExtra)) {
+                DebugLogger.e("AbstractMessageHandler", "old cloud notification message");
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // com.meizu.cloud.pushsdk.handler.a.a
+    /* renamed from: c, reason: merged with bridge method [inline-methods] */
+    public void b(MessageV3 messageV3) {
+        com.meizu.cloud.pushsdk.util.c.c(c(), messageV3.getUploadDataPackageName(), messageV3.getDeviceId(), messageV3.getTaskId(), messageV3.getSeqId(), messageV3.getPushTimestamp());
+    }
+
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // com.meizu.cloud.pushsdk.handler.a.a
+    /* renamed from: d, reason: merged with bridge method [inline-methods] */
+    public void c(MessageV3 messageV3) {
+        com.meizu.cloud.pushsdk.util.c.a(c(), messageV3.getUploadDataPackageName(), messageV3.getDeviceId(), messageV3.getTaskId(), messageV3.getSeqId(), messageV3.getPushTimestamp());
+    }
+
+    @Override // com.meizu.cloud.pushsdk.handler.a.a
+    /* renamed from: e, reason: avoid collision after fix types in other method and merged with bridge method [inline-methods] */
+    public com.meizu.cloud.pushsdk.notification.c a(MessageV3 messageV3) {
+        PushNotificationBuilder pushNotificationBuilder = new PushNotificationBuilder();
+        pushNotificationBuilder.setClickPackageName(i(messageV3));
+        b().a(pushNotificationBuilder);
+        com.meizu.cloud.pushsdk.notification.c dVar = null;
+        if (messageV3.getmNotificationStyle() != null) {
+            int baseStyle = messageV3.getmNotificationStyle().getBaseStyle();
+            if (BaseStyleModel.FLYME.getCode() == baseStyle) {
+                int innerStyle = messageV3.getmNotificationStyle().getInnerStyle();
+                if (InnerStyleLayout.EXPANDABLE_STANDARD.getCode() == innerStyle) {
+                    DebugLogger.i("AbstractMessageHandler", "show Standard Notification with Expandable disable");
+                    dVar = new com.meizu.cloud.pushsdk.notification.b.c(c(), pushNotificationBuilder);
+                } else if (InnerStyleLayout.EXPANDABLE_TEXT.getCode() == innerStyle) {
+                    DebugLogger.i("AbstractMessageHandler", "show Standard Notification with Expandable Text");
+                    dVar = new com.meizu.cloud.pushsdk.notification.b.b(c(), pushNotificationBuilder);
+                } else if (InnerStyleLayout.EXPANDABLE_PIC.getCode() == innerStyle) {
+                    DebugLogger.i("AbstractMessageHandler", "show Standard Notification with Expandable Picture");
+                    dVar = new com.meizu.cloud.pushsdk.notification.b.a(c(), pushNotificationBuilder);
+                } else if (InnerStyleLayout.EXPANDABLE_VIDEO.getCode() == innerStyle) {
+                    DebugLogger.i("AbstractMessageHandler", "show Flyme Video notification");
+                    dVar = new com.meizu.cloud.pushsdk.notification.a.d(c(), pushNotificationBuilder);
+                }
+            } else if (BaseStyleModel.PURE_PICTURE.getCode() == baseStyle) {
+                dVar = new com.meizu.cloud.pushsdk.notification.b(c(), pushNotificationBuilder);
+                DebugLogger.i("AbstractMessageHandler", "show Pure Picture Notification");
+            } else if (BaseStyleModel.ANDROID.getCode() == baseStyle) {
+                int innerStyle2 = messageV3.getmNotificationStyle().getInnerStyle();
+                if (InnerStyleLayout.EXPANDABLE_STANDARD.getCode() == innerStyle2) {
+                    DebugLogger.i("AbstractMessageHandler", "show Android  Notification with Expandable disable");
+                    dVar = new com.meizu.cloud.pushsdk.notification.a.c(c(), pushNotificationBuilder);
+                } else if (InnerStyleLayout.EXPANDABLE_TEXT.getCode() == innerStyle2) {
+                    DebugLogger.i("AbstractMessageHandler", "show Android  Notification with Expandable Text");
+                    dVar = new com.meizu.cloud.pushsdk.notification.a.b(c(), pushNotificationBuilder);
+                } else if (InnerStyleLayout.EXPANDABLE_PIC.getCode() == innerStyle2) {
+                    DebugLogger.i("AbstractMessageHandler", "show Android  Notification with Expandable Picture");
+                    dVar = new com.meizu.cloud.pushsdk.notification.a.a(c(), pushNotificationBuilder);
+                } else if (InnerStyleLayout.EXPANDABLE_VIDEO.getCode() == innerStyle2) {
+                    DebugLogger.i("AbstractMessageHandler", "show Flyme Video notification");
+                    dVar = new com.meizu.cloud.pushsdk.notification.a.d(c(), pushNotificationBuilder);
+                }
+            }
+        }
+        if (dVar != null) {
+            return dVar;
+        }
+        DebugLogger.e("AbstractMessageHandler", "use standard v2 notification");
+        return new com.meizu.cloud.pushsdk.notification.d(c(), pushNotificationBuilder);
+    }
+
+    @Override // com.meizu.cloud.pushsdk.handler.a.a
+    public boolean f(MessageV3 messageV3) {
+        String uriPackageName = messageV3.getUriPackageName();
+        if (TextUtils.isEmpty(uriPackageName)) {
+            return true;
+        }
+        return MzSystemUtils.isPackageInstalled(c(), uriPackageName);
+    }
+
+    @Override // com.meizu.cloud.pushsdk.handler.a.a
+    /* renamed from: g, reason: merged with bridge method [inline-methods] */
+    public int d(MessageV3 messageV3) {
+        if (messageV3.getmTimeDisplaySetting() == null || !messageV3.getmTimeDisplaySetting().isTimeDisplay()) {
+            return 0;
+        }
+        if (System.currentTimeMillis() > Long.valueOf(messageV3.getmTimeDisplaySetting().getEndShowTime()).longValue()) {
+            com.meizu.cloud.pushsdk.util.c.a(c(), "schedule notification expire", 2200, messageV3.getTaskId(), messageV3.getDeviceId());
+            return 1;
+        }
+        if (System.currentTimeMillis() > Long.valueOf(messageV3.getmTimeDisplaySetting().getStartShowTime()).longValue()) {
+            com.meizu.cloud.pushsdk.util.c.a(c(), "schedule notification on time", 2201, messageV3.getTaskId(), messageV3.getDeviceId());
+            return 2;
+        }
+        com.meizu.cloud.pushsdk.util.c.a(c(), "schedule notification delay", 2202, messageV3.getTaskId(), messageV3.getDeviceId());
+        return 3;
+    }
+
+    @Override // com.meizu.cloud.pushsdk.handler.a.a
+    /* renamed from: h, reason: merged with bridge method [inline-methods] */
+    public void e(MessageV3 messageV3) {
+        Context contextC = c();
+        c();
+        AlarmManager alarmManager = (AlarmManager) contextC.getSystemService(NotificationCompat.CATEGORY_ALARM);
+        Intent intent = new Intent(c(), (Class<?>) NotificationService.class);
+        intent.setPackage(messageV3.getPackageName());
+        intent.addCategory(messageV3.getPackageName());
+        intent.setData(Uri.parse("custom://" + System.currentTimeMillis()));
+        intent.putExtra("command_type", "reflect_receiver");
+        intent.setAction(PushConstants.MZ_PUSH_ON_MESSAGE_ACTION);
+        intent.putExtra(PushConstants.EXTRA_APP_PUSH_SCHEDULE_NOTIFICATION_MESSAGE, messageV3);
+        intent.putExtra("method", PushConstants.MZ_PUSH_MESSAGE_METHOD_ACTION_SCHEDULE_NOTIFICATION);
+        PendingIntent service = PendingIntent.getService(c(), 0, intent, MinSdkChecker.isSupportSetDrawableSmallIcon() ? 67108864 : 1073741824);
+        String startShowTime = messageV3.getmTimeDisplaySetting().getStartShowTime();
+        String str = !TextUtils.isEmpty(startShowTime) ? new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(Long.valueOf(startShowTime).longValue())) : null;
+        long jLongValue = Long.valueOf(startShowTime).longValue() - System.currentTimeMillis();
+        DebugLogger.i("AbstractMessageHandler", "after " + (jLongValue / 1000) + " seconds Notification AlarmManager execute At " + str);
+        DebugLogger.i("AbstractMessageHandler", "setAlarmManager setWindow ELAPSED_REALTIME_WAKEUP");
+        alarmManager.setExact(2, SystemClock.elapsedRealtime() + jLongValue, service);
+    }
+
+    @Override // com.meizu.cloud.pushsdk.handler.a.a
+    /* renamed from: j, reason: merged with bridge method [inline-methods] */
+    public MessageV3 c(Intent intent) {
+        return MessageV3.parse(c().getPackageName(), g(intent), h(intent), d(intent), e(intent), f(intent), intent.getStringExtra(PushConstants.MZ_PUSH_MESSAGE_METHOD_ACTION_NOTIFICATION_SHOW_V3.equals(i(intent)) ? PushConstants.MZ_PUSH_PRIVATE_MESSAGE : "message"));
+    }
+}

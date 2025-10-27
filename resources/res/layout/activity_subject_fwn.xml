@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/bg_backgroud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ExpandableListView
+            android:id="@+id/elv_subject"
+            android:background="@color/transparent"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:groupIndicator="@null"
+            android:childDivider="?attr/divider_color"
+            android:divider="?attr/divider_color"
+            android:dividerHeight="0.5dp"
+            android:headerDividersEnabled="false"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/gray_font"
+        android:gravity="center"
+        android:id="@+id/tv_empty"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="暂无数据"/>
+</RelativeLayout>

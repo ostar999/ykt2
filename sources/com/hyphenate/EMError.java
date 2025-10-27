@@ -1,0 +1,118 @@
+package com.hyphenate;
+
+/* loaded from: classes4.dex */
+public class EMError {
+    public static final int CHANNEL_SYNC_NOT_OPEN = 106;
+    public static final int CHATROOM_ALREADY_JOINED = 701;
+    public static final int CHATROOM_INVALID_ID = 700;
+    public static final int CHATROOM_MEMBERS_FULL = 704;
+    public static final int CHATROOM_NOT_EXIST = 705;
+    public static final int CHATROOM_NOT_JOINED = 702;
+    public static final int CHATROOM_PERMISSION_DENIED = 703;
+    public static final int CONTACT_ADD_FAILED = 1000;
+    public static final int CONTACT_REACH_LIMIT = 1001;
+    public static final int CONTACT_REACH_LIMIT_PEER = 1002;
+    public static final int DATABASE_ERROR = 3;
+    public static final int EM_NO_ERROR = 0;
+    public static final int EXCEED_SERVICE_LIMIT = 4;
+    public static final int FILE_CONTENT_IMPROPER = 406;
+    public static final int FILE_DELETE_FAILED = 404;
+    public static final int FILE_DOWNLOAD_FAILED = 403;
+    public static final int FILE_INVALID = 401;
+    public static final int FILE_NOT_FOUND = 400;
+    public static final int FILE_TOO_LARGE = 405;
+    public static final int FILE_UPLOAD_FAILED = 402;
+    public static final int GENERAL_ERROR = 1;
+    public static final int GROUP_ALREADY_JOINED = 601;
+    public static final int GROUP_DISABLED = 607;
+    public static final int GROUP_INVALID_ID = 600;
+    public static final int GROUP_MEMBERS_FULL = 604;
+    public static final int GROUP_NAME_VIOLATION = 608;
+    public static final int GROUP_NOT_EXIST = 606;
+    public static final int GROUP_NOT_JOINED = 602;
+    public static final int GROUP_PERMISSION_DENIED = 603;
+    public static final int GROUP_SHARED_FILE_INVALIDID = 605;
+    public static final int INVALID_APP_KEY = 100;
+    public static final int INVALID_CONVERSATION = 107;
+    public static final int INVALID_PARAM = 110;
+    public static final int INVALID_PASSWORD = 102;
+    public static final int INVALID_TOKEN = 104;
+    public static final int INVALID_URL = 103;
+    public static final int INVALID_USER_NAME = 101;
+    public static final int MESSAGE_CURRENT_LIMITING = 509;
+    public static final int MESSAGE_ENCRYPTION_ERROR = 503;
+    public static final int MESSAGE_EXPIRED = 506;
+    public static final int MESSAGE_EXTERNAL_LOGIC_BLOCKED = 508;
+    public static final int MESSAGE_ILLEGAL_WHITELIST = 507;
+    public static final int MESSAGE_INCLUDE_ILLEGAL_CONTENT = 501;
+    public static final int MESSAGE_INVALID = 500;
+    public static final int MESSAGE_RECALL_TIME_LIMIT = 504;
+    public static final int MESSAGE_SEND_TRAFFIC_LIMIT = 502;
+    public static final int MODERATION_FAILED = 1200;
+    public static final int NETWORK_ERROR = 2;
+    public static final int OPERATION_UNSUPPORTED = 111;
+    public static final int PARTIAL_SUCCESS = 7;
+    public static final int PRESENCE_CANNOT_SUBSCRIBE_YOURSELF = 1101;
+    public static final int PRESENCE_PARAM_LENGTH_EXCEED = 1100;
+    public static final int PUSH_BIND_FAILED = 1501;
+    public static final int PUSH_NOT_SUPPORT = 1500;
+    public static final int PUSH_REPORT_ACTION_FAILED = 6;
+    public static final int PUSH_UNBIND_FAILED = 1502;
+    public static final int QUERY_PARAM_REACHES_LIMIT = 112;
+    public static final int REACTION_HAS_BEEN_OPERATED = 1301;
+    public static final int REACTION_OPERATION_IS_ILLEGAL = 1302;
+    public static final int REACTION_REACH_LIMIT = 1300;
+    public static final int SERVER_BUSY = 302;
+    public static final int SERVER_DECRYPTION_FAILED = 306;
+    public static final int SERVER_GET_DNSLIST_FAILED = 304;
+    public static final int SERVER_NOT_REACHABLE = 300;
+    public static final int SERVER_SERVICE_RESTRICTED = 305;
+    public static final int SERVER_TIMEOUT = 301;
+    public static final int SERVER_UNKNOWN_ERROR = 303;
+    public static final int SERVICE_ARREARAGES = 5;
+    public static final int SERVICE_NOT_ENABLED = 505;
+    public static final int THIRD_SERVER_FAILED = 1299;
+    public static final int THREAD_ALREADY_EXIST = 1401;
+    public static final int THREAD_CREATE_MESSAGE_ILLEGAL = 1402;
+    public static final int THREAD_NOT_EXIST = 1400;
+    public static final int TOKEN_EXPIRED = 108;
+    public static final int TOKEN_WILL_EXPIRE = 109;
+
+    @Deprecated
+    public static final int TRANSLATE_FAIL = 904;
+
+    @Deprecated
+    public static final int TRANSLATE_INVALID_PARAMS = 903;
+    public static final int TRANSLATE_MESSAGE_FAIL = 1113;
+
+    @Deprecated
+    public static final int TRANSLATE_NOT_INIT = 905;
+    public static final int TRANSLATE_PARAM_INVALID = 1110;
+    public static final int TRANSLATE_SERVICE_NOT_ENABLE = 1111;
+    public static final int TRANSLATE_USAGE_LIMIT = 1112;
+    public static final int USERINFO_DATALENGTH_EXCEED = 901;
+    public static final int USERINFO_USERCOUNT_EXCEED = 900;
+    public static final int USER_ALREADY_EXIST = 203;
+    public static final int USER_ALREADY_LOGIN = 200;
+    public static final int USER_ALREADY_LOGIN_ANOTHER = 218;
+    public static final int USER_AUTHENTICATION_FAILED = 202;
+    public static final int USER_BINDDEVICETOKEN_FAILED = 211;
+    public static final int USER_BIND_ANOTHER_DEVICE = 213;
+    public static final int USER_DEVICE_CHANGED = 220;
+    public static final int USER_ILLEGAL_ARGUMENT = 205;
+    public static final int USER_KICKED_BY_CHANGE_PASSWORD = 216;
+    public static final int USER_KICKED_BY_OTHER_DEVICE = 217;
+    public static final int USER_LOGIN_ANOTHER_DEVICE = 206;
+    public static final int USER_LOGIN_TOO_MANY_DEVICES = 214;
+    public static final int USER_MUTED = 215;
+    public static final int USER_MUTED_BY_ADMIN = 219;
+    public static final int USER_NAME_TOO_LONG = 105;
+    public static final int USER_NOT_FOUND = 204;
+    public static final int USER_NOT_LOGIN = 201;
+    public static final int USER_NOT_ON_ROSTER = 221;
+    public static final int USER_PERMISSION_DENIED = 210;
+    public static final int USER_REG_FAILED = 208;
+    public static final int USER_REMOVED = 207;
+    public static final int USER_UNBIND_DEVICETOKEN_FAILED = 212;
+    public static final int USER_UPDATEINFO_FAILED = 209;
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="@color/gray_line_new"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="12.5sp"
+            android:textColor="#b7b7b7"
+            android:gravity="center"
+            android:id="@+id/paixutv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认排序"
+            android:drawablePadding="10dp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:textSize="14sp"
+            android:textColor="?attr/question_color"
+            android:id="@+id/anstotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部解析"
+            android:drawablePadding="10dp"/>
+    </RelativeLayout>
+</LinearLayout>

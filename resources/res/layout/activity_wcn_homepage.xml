@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cn.webdemo.com.supporfragment.tablayout.MagicIndicator
+        android:id="@+id/magic_indicator"
+        android:background="?attr/app_bg"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"/>
+    <View
+        android:id="@+id/line"
+        android:background="?attr/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+</LinearLayout>

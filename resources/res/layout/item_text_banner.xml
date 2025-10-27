@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="12sp"
+    android:textColor="?attr/person_orange_color"
+    android:ellipsize="end"
+    android:gravity="center_vertical"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="消息通知消息通知消息通知消息通知"
+    android:lines="1"/>

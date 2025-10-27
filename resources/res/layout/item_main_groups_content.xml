@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="#dfddde"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.psychiatrygarden.widget.MyListView
+        android:id="@+id/main_groups_item_content_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#dfddde"
+        android:dividerHeight="0.5dp"/>
+    <View
+        android:background="#dfddde"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

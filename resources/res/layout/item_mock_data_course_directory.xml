@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40">
+    <TextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="?attr/first_txt_color"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_39"
+        android:text="测试课程目录显示测试课程目录显示"
+        android:paddingHorizontal="@dimen/dp_16"/>
+    <View
+        android:background="?attr/new_bg_one_border_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

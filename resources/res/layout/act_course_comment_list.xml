@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:paddingHorizontal="@dimen/dp_16">
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            android:textColor="?attr/first_txt_color"
+            android:gravity="center"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="课程评价"/>
+        <ImageView
+            android:layout_gravity="start|center_vertical"
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/icon_black_back"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

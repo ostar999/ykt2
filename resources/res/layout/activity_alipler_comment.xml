@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:orientation="vertical"
+        android:background="?attr/app_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$Behavior">
+        <com.psychiatrygarden.aliPlayer.widget.CustomAliPlayerView
+            android:id="@+id/aliplerView"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <com.psychiatrygarden.activity.comment.widget.BottomInputView
+            android:id="@+id/bottom_input_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

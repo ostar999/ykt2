@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp">
+    <TextView
+        android:textSize="12sp"
+        android:gravity="center"
+        android:id="@+id/item_question_column"
+        android:paddingLeft="12dp"
+        android:paddingTop="5dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="5dp"/>
+    <View
+        android:layout_width="12dp"
+        android:layout_height="10dp"/>
+</LinearLayout>

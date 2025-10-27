@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/shadow_question_ad_two_bg"
+    android:focusable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.psychiatrygarden.utils.viewfilter.XMarqueeView
+        android:id="@+id/xMarqueeView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        app:isFlippingLessCount="false"
+        app:isSetAnimDuration="true"
+        app:marquee_count="1"/>
+</RelativeLayout>

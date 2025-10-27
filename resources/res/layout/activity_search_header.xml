@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.psychiatrygarden.widget.ClearEditText
+        android:textSize="14sp"
+        android:textColor="?attr/question_color"
+        android:textColorHint="?attr/dialog_input_hint_color"
+        android:id="@+id/editTxt"
+        android:background="?attr/line_all_round"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:hint=" 用关键词搜索试试"
+        android:drawableLeft="?attr/icon_search"
+        android:drawablePadding="10dp"/>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="@dimen/dp_7"
+        android:width="@dimen/dp_7">
+        <shape android:shape="oval">
+            <solid android:color="?attr/app_bg"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:height="@dimen/dp_4"
+        android:width="@dimen/dp_4">
+        <shape android:shape="oval">
+            <solid android:color="@color/zx_color_blue"/>
+        </shape>
+    </item>
+</layer-list>

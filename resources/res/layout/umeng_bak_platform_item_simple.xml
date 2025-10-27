@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/umeng_socialize_share_to_button"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <ImageView
+        android:id="@+id/umeng_socialize_full_alert_dialog_item_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/umeng_socialize_tx_on"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"
+        android:id="@+id/umeng_socialize_full_alert_dialog_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:text="腾讯微博"
+        android:layout_toRightOf="@+id/umeng_socialize_full_alert_dialog_item_icon"/>
+    <TextView
+        android:textSize="15sp"
+        android:textColor="#44474f"
+        android:gravity="center_vertical"
+        android:id="@+id/umeng_socialize_full_alert_dialog_item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

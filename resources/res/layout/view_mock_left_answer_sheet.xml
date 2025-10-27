@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/ly_title"
+        android:background="?attr/new_bg_two_color"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_28"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:paddingHorizontal="@dimen/dp_16">
+        <TextView
+            android:textSize="@dimen/sp_11"
+            android:textStyle="bold"
+            android:textColor="?attr/first_txt_color"
+            android:ellipsize="end"
+            android:id="@+id/tv_part_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第一部分：单选题"
+            android:lines="1"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:src="?attr/arrow_right"
+            android:rotation="90"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_sheet"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="16dp"
+        android:layout_marginEnd="3dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="5"/>
+</LinearLayout>

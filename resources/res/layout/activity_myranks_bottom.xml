@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="13sp"
+        android:textColor="@color/app_theme_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="5dp"
+        android:text="说明"
+        android:drawableLeft="@drawable/dengji_shuoming_icon"
+        android:drawablePadding="10dp"/>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="@color/gray_high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/dengji_shuoming"
+        android:lineSpacingMultiplier="1.2"/>
+</LinearLayout>

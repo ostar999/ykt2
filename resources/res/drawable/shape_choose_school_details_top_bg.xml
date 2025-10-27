@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="?attr/school_open_major_top_start"
+        android:endColor="?attr/school_open_major_top_end"
+        android:useLevel="true"
+        android:angle="90"
+        android:type="linear"/>
+</shape>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c_efeef3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/color_white"
+        android:paddingBottom="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/imgv"
+            android:layout_width="@dimen/dp_160"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/sendTv"
+            android:background="@drawable/set_feedback_send"
+            android:layout_width="@dimen/dp_68"
+            android:layout_height="@dimen/dp_36"
+            android:text="@string/common_send"
+            android:layout_marginEnd="@dimen/dp_30"
+            app:layout_constraintBottom_toBottomOf="@+id/imgv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <EditText
+            android:textColorHint="@color/c_acacac"
+            android:gravity="top"
+            android:id="@+id/et"
+            android:background="@color/c_f3f3f3"
+            android:padding="@dimen/dp_8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_90"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:hint="@string/me_feedback_tip3"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            app:layout_constraintTop_toBottomOf="@+id/imgv"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.psychiatrygarden.widget.ClearEditText
+        android:textSize="16sp"
+        android:textColor="?attr/first_text_color"
+        android:textColorHint="?attr/tertiary_text_color"
+        android:gravity="center_vertical"
+        android:id="@+id/editview"
+        android:background="?attr/app_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:minHeight="40dp"
+        android:hint="请输入兑换码"/>
+    <TextView
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/duihuan"
+        android:background="?attr/red_round_coner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="激活"/>
+</LinearLayout>

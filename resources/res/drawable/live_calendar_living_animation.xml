@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:duration="200"
+        android:drawable="@drawable/icon_live_calendar_animator_1"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/icon_live_calendar_animator_2"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/icon_live_calendar_animator_3"/>
+</animation-list>

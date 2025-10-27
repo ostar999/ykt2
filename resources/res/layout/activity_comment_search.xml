@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="?attr/first_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.psychiatrygarden.widget.ClearEditText
+            android:textSize="14sp"
+            android:textColor="?attr/question_color"
+            android:textColorHint="?attr/dialog_input_hint_color"
+            android:id="@+id/ed_search"
+            android:background="?attr/line_all_round"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="输入关键字搜索评论"
+            android:singleLine="true"
+            android:drawableLeft="?attr/icon_search"
+            android:drawablePadding="5dp"
+            android:imeOptions="actionSearch"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+    </RelativeLayout>
+    <View
+        android:background="?attr/divider_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <include layout="@layout/layout_recy"/>
+</LinearLayout>

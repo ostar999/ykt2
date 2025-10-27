@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lin_vew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+            <com.psychiatrygarden.widget.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_gravity="center"
+                android:id="@+id/iv_cup_photo"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="?attr/personal_headimg_icon"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:textSize="14sp"
+                android:textColor="?attr/first_text_color"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="名字"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+        <TextView
+            android:background="?attr/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+</LinearLayout>

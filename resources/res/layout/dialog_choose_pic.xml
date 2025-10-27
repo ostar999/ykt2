@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_mian"
+    android:background="@drawable/bg_pop_comment"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/iv_top_indicator"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginBottom="@dimen/dp_14"
+        android:src="@drawable/bg_pop_bottom_btn"/>
+    <View style="@style/line_gray_style"/>
+    <TextView
+        android:textSize="17sp"
+        android:textColor="?attr/first_text_color"
+        android:gravity="center"
+        android:id="@+id/btn_camera"
+        android:background="?attr/new_bg_one_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:text="拍照"
+        android:layout_below="@+id/recyclerView"/>
+    <View style="@style/line_gray_style"/>
+    <TextView
+        android:textSize="17sp"
+        android:textColor="?attr/first_txt_color"
+        android:gravity="center"
+        android:id="@+id/btn_album"
+        android:background="?attr/new_bg_one_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:text="相册"
+        android:layout_below="@+id/recyclerView"/>
+    <View style="@style/line_gray_style"/>
+    <TextView
+        android:textSize="17sp"
+        android:textColor="?attr/first_txt_color"
+        android:gravity="center"
+        android:id="@+id/btn_cancel"
+        android:background="@drawable/bg_pop_bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginBottom="20dp"
+        android:text="取消"/>
+</LinearLayout>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bit_arrys">
+        <item>标清</item>
+        <item>高清</item>
+        <item>超清</item>
+    </array>
+    <array name="combine_question_count">
+        <item>10</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+    </array>
+    <array name="course_survey_titles">
+        <item>1、您对本套课程满意吗？</item>
+        <item>2、您认为本套课程与考纲紧密结合吗？</item>
+        <item>3、通过本课程的学习，对您成绩的提升是否有帮助呢？</item>
+    </array>
+    <array name="download_categories">
+        <item>课程</item>
+        <item>课单</item>
+        <item>资料</item>
+    </array>
+    <array name="ease_apk_file_suffix">
+        <item>.apk</item>
+    </array>
+    <array name="ease_audio_file_suffix">
+        <item>.mp3</item>
+        <item>.au</item>
+        <item>.awb</item>
+        <item>.snd</item>
+        <item>.mid</item>
+        <item>.rmi</item>
+        <item>.aif</item>
+        <item>.aifc</item>
+        <item>.aiff</item>
+        <item>.als</item>
+        <item>.m3u</item>
+        <item>.ra</item>
+        <item>.ram</item>
+        <item>.wav</item>
+        <item>.wma</item>
+        <item>.es</item>
+        <item>.esl</item>
+        <item>.it</item>
+        <item>.itz</item>
+        <item>.m15</item>
+        <item>.m3u</item>
+        <item>.m3url</item>
+        <item>.ma1</item>
+        <item>.ma2</item>
+        <item>.ma3</item>
+        <item>.ma5</item>
+    </array>
+    <array name="ease_excel_file_suffix">
+        <item>.xla</item>
+        <item>.xlc</item>
+        <item>.xlm</item>
+        <item>.xls</item>
+        <item>.xlt</item>
+        <item>.xlw</item>
+        <item>.xlsx</item>
+    </array>
+    <array name="ease_file_file_suffix">
+        <item>.txt</item>
+        <item>.log</item>
+        <item>.html</item>
+        <item>.stm</item>
+        <item>.uls</item>
+        <item>.bas</item>
+        <item>.c</item>
+        <item>.h</item>
+        <item>.rtx</item>
+        <item>.sct</item>
+        <item>.tsv</item>
+        <item>.htt</item>
+        <item>.htc</item>
+        <item>.etx</item>
+        <item>.vcf</item>
+    </array>
+    <array name="ease_image_file_suffix">
+        <item>.bmp</item>
+        <item>.cod</item>
+        <item>.gif</item>
+        <item>.ief</item>
+        <item>.jpe</item>
+        <item>.jpeg</item>
+        <item>.jpg</item>
+        <item>.jfif</item>
+        <item>.svg</item>
+        <item>.tif</item>
+        <item>.tiff</item>
+        <item>.ras</item>
+        <item>.ico</item>
+        <item>.pbm</item>
+        <item>.pgm</item>
+        <item>.png</item>
+        <item>.pnm</item>
+        <item>.ppm</item>
+        <item>.xbm</item>
+        <item>.xpm</item>
+        <item>.xwd</item>
+        <item>.rgb</item>
+    </array>
+    <array name="ease_key_file_suffix">
+        <item>.key</item>
+    </array>
+    <array name="ease_numbers_file_suffix">
+        <item>.numbers</item>
+    </array>
+    <array name="ease_other_file_suffix">
+        <item>.doc</item>
+        <item>.dot</item>
+        <item>.xla</item>
+        <item>.xlc</item>
+        <item>.xlm</item>
+        <item>.xls</item>
+        <item>.xlt</item>
+        <item>.xlw</item>
+        <item>.gif</item>
+        <item>.jpe</item>
+        <item>.jpeg</item>
+        <item>.jpg</item>
+    </array>
+    <array name="ease_pages_file_suffix">
+        <item>.pages</item>
+    </array>
+    <array name="ease_pdf_file_suffix">
+        <item>.pdf</item>
+    </array>
+    <array name="ease_ppt_file_suffix">
+        <item>.ppt</item>
+        <item>.pptx</item>
+    </array>
+    <array name="ease_video_file_suffix">
+        <item>.rmvb</item>
+        <item>.avi</item>
+        <item>.mp4</item>
+        <item>.mp2</item>
+        <item>.mpa</item>
+        <item>.mpe</item>
+        <item>.mpeg</item>
+        <item>.mpg</item>
+        <item>.mpv2</item>
+        <item>.mpg4</item>
+        <item>.mov</item>
+        <item>.mng</item>
+        <item>.movie</item>
+        <item>.qt</item>
+        <item>.lsf</item>
+        <item>.lsx</item>
+        <item>.asf</item>
+        <item>.asr</item>
+        <item>.asx</item>
+        <item>.avi</item>
+        <item>.wmv</item>
+        <item>.3gp</item>
+        <item>.fvi</item>
+        <item>.pvx</item>
+        <item>.rv</item>
+        <item>.vdo</item>
+        <item>.viv</item>
+        <item>.vivo</item>
+        <item>.wm</item>
+        <item>.wmx</item>
+        <item>.wv</item>
+        <item>.wvx</item>
+    </array>
+    <array name="ease_word_file_suffix">
+        <item>.doc</item>
+        <item>.dot</item>
+        <item>.docx</item>
+    </array>
+    <array name="exam_type">
+        <item>单选题</item>
+        <item>多选题</item>
+        <item>填空题</item>
+        <item>名词解释</item>
+        <item>简答题</item>
+        <item>论述题</item>
+        <item>病例分析</item>
+        <item>按理分析</item>
+        <item>考点填空</item>
+        <item>病史采集</item>
+        <item>A1型题</item>
+        <item>A2型题</item>
+        <item>A3型题</item>
+        <item>A4型题</item>
+        <item>A3/A4型题</item>
+        <item>B型题</item>
+        <item>C型题</item>
+        <item>X型题</item>
+        <item>不定项选择题</item>
+    </array>
+    <array name="exo_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>@string/exo_controls_playback_speed_normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </array>
+    <array name="exo_speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </array>
+    <array name="home_bottom_tabs">
+        <item>推荐热帖</item>
+        <item>过考经验</item>
+        <item>推荐资讯</item>
+    </array>
+    <array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </array>
+    <array name="off_screen">
+        <item>跟随系统</item>
+        <item>5分钟</item>
+        <item>15分钟</item>
+        <item>30分钟</item>
+    </array>
+    <array name="page_type">
+        <item>仿真翻页</item>
+        <item>左右滑动</item>
+        <item>上下翻页</item>
+    </array>
+    <array name="picture_picker_types">
+        <item>拍照</item>
+        <item>从相册选择</item>
+    </array>
+    <array name="pref_entries_pixel_format">
+        <item>Auto Select</item>
+        <item>RGB 565</item>
+        <item>RGB 888</item>
+        <item>RGBX 8888</item>
+        <item>YV12</item>
+        <item>OpenGL ES2</item>
+    </array>
+    <array name="pref_entries_player">
+        <item>Auto Select</item>
+        <item>AndroidMediaPlayer</item>
+        <item>IjkMediaPlayer</item>
+        <item>IjkExoMediaPlayer</item>
+    </array>
+    <array name="pref_entry_summaries_pixel_format">
+        <item>Auto Select</item>
+        <item>RGB 565</item>
+        <item>RGB 888</item>
+        <item>RGBX 8888</item>
+        <item>YV12</item>
+        <item>OpenGL ES2</item>
+    </array>
+    <array name="pref_entry_summaries_player">
+        <item>Auto Select</item>
+        <item>AndroidMediaPlayer</item>
+        <item>IjkMediaPlayer</item>
+        <item>IjkExoMediaPlayer</item>
+    </array>
+    <array name="pref_entry_values_pixel_format">
+        <item />
+        <item>fcc-rv16</item>
+        <item>fcc-rv24</item>
+        <item>fcc-rv32</item>
+        <item>fcc-yv12</item>
+        <item>fcc-_es2</item>
+    </array>
+    <array name="pref_entry_values_player">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="rest_time">
+        <item>关闭</item>
+        <item>1分钟</item>
+        <item>45分钟</item>
+        <item>60分钟</item>
+        <item>120分钟</item>
+    </array>
+    <array name="rule_ids">
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>82</item>
+    </array>
+    <array name="side_bar_array">
+        <item>@string/search_new</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+        <item>#</item>
+    </array>
+    <array name="storehouse">
+        <item>0,35,12,42,</item>
+        <item>12,42,24,35,</item>
+        <item>24,35,12,28,</item>
+        <item>0,35,12,28,</item>
+        <item>0,21,12,28,</item>
+        <item>12,28,24,21,</item>
+        <item>24,35,24,21,</item>
+        <item>24,21,12,14,</item>
+        <item>0,21,12,14,</item>
+        <item>0,21,0,7,</item>
+        <item>12,14,0,7,</item>
+        <item>12,14,24,7,</item>
+        <item>24,7,12,0,</item>
+        <item>0,7,12,0,</item>
+    </array>
+    <array name="titles">
+        <item>商品</item>
+        <item>详情</item>
+        <item>评价</item>
+    </array>
+</resources>

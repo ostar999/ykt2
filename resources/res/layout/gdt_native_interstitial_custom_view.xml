@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/beizi_root_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/beizi_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/beizi_ad_cover_image_container_parent"
+            android:background="#60bdbdbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:id="@+id/beizi_ad_cover_image_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.qq.e.ads.nativ.MediaView
+                android:layout_gravity="center"
+                android:id="@+id/beizi_media_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="end|top"
+        android:id="@+id/beizi_close"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/interstitial_close"
+        android:contentDescription="@null"/>
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

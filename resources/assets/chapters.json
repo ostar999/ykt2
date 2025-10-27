@@ -1,0 +1,79 @@
+[
+  {
+    "id": "1",
+    "name": "第一章 绪论绪论绪论绪论绪论绪论绪论",
+    "nodeLevel": 1
+  },
+  {
+    "id": "11",
+    "parentId": "1",
+    "name": "蛋白质的结构与功能蛋白质的结构与功能蛋白质的结构与功能",
+    "nodeLevel": 2
+  },
+  {
+    "id": "111",
+    "parentId": "11",
+    "name": "蛋白质的结构与功能蛋白质的结构1",
+    "nodeLevel": 3
+  },
+  {
+    "id": "112",
+    "parentId": "11",
+    "name": "蛋白质的结构与功能蛋白质的结构2",
+    "nodeLevel": 3
+  },
+  {
+    "id": "113",
+    "parentId": "11",
+    "name": "蛋白质的结构与功能蛋白质的结构3",
+    "nodeLevel": 3
+  },
+  {
+    "id": "114",
+    "parentId": "11",
+    "name": "蛋白质的结构与功能蛋白质的结构4",
+    "nodeLevel": 3
+  },
+  {
+    "id": "115",
+    "parentId": "11",
+    "name": "蛋白质的结构与功能蛋白质的结构5",
+    "nodeLevel": 3
+  },
+  {
+    "id": "12",
+    "name": "真核基因与基因组",
+    "parentId": "1",
+    "nodeLevel": 2
+  },
+  {
+    "id": "116",
+    "parentId": "12",
+    "name": "真核基因与基因组1",
+    "nodeLevel": 3
+  },
+  {
+    "id": "117",
+    "parentId": "12",
+    "name": "真核基因与基因组2",
+    "nodeLevel": 3
+  },
+  {
+    "id": "118",
+    "parentId": "12",
+    "name": "真核基因与基因组3",
+    "nodeLevel": 3
+  },
+  {
+    "id": "119",
+    "parentId": "12",
+    "name": "真核基因与基因组4",
+    "nodeLevel": 3
+  },
+  {
+    "id": "120",
+    "parentId": "12",
+    "name": "真核基因与基因组5",
+    "nodeLevel": 3
+  }
+]

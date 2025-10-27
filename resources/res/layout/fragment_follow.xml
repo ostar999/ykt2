@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/app_bg"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp">
+    <com.psychiatrygarden.widget.ClearEditText
+        android:textSize="14sp"
+        android:textColor="?attr/first_text_color"
+        android:textColorHint="?attr/fourth_text_color"
+        android:id="@+id/et_search"
+        android:background="?attr/line_all_round_write"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint=" 请输入关键字"
+        android:singleLine="true"
+        android:drawableLeft="?attr/home_search_img"
+        android:drawablePadding="5dp"
+        android:layout_toLeftOf="@+id/searchview"
+        android:imeOptions="actionSearch"
+        android:textCursorDrawable="@drawable/color_cursor"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/listview"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="?attr/line"
+            android:dividerHeight="0.5dp"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

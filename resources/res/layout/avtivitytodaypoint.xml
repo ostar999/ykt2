@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.psychiatrygarden.widget.PinnedSectionListView
+        android:id="@+id/pinnedSectionListView1"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0.1dp"/>
+</LinearLayout>

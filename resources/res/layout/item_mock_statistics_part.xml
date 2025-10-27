@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/sp_12"
+    android:textStyle="bold"
+    android:textColor="@color/main_theme_color"
+    android:id="@+id/tv_part_name"
+    android:background="@drawable/shape_main_theme_five_deep_color_bg"
+    android:paddingLeft="@dimen/dp_12"
+    android:paddingTop="@dimen/dp_5"
+    android:paddingRight="@dimen/dp_12"
+    android:paddingBottom="@dimen/dp_5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="部分名称"
+    android:layout_marginEnd="@dimen/dp_12"
+    android:paddingHorizontal="@dimen/dp_12"
+    android:paddingVertical="@dimen/dp_5"/>

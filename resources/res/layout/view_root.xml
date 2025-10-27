@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ViewStub
+        android:id="@+id/title_bar_view_stub"
+        android:paddingTop="@dimen/dp_22"
+        android:layout="@layout/layout_title_bar"
+        android:inflatedId="@+id/title_bar_view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <FrameLayout
+        android:id="@+id/layout_body"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar_view_stub">
+        <ViewStub
+            android:id="@+id/loading_view_stub"
+            android:layout="@layout/syyx_layout_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

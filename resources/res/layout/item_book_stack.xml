@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_bg_one_round8"
+    android:padding="@dimen/dp_12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_12"
+    android:layout_marginEnd="@dimen/dp_12">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_pic"
+        android:layout_width="@dimen/dp_42"
+        android:layout_height="@dimen/dp_56"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="@dimen/dp_10"
+        app:riv_corner_radius="@dimen/dp_4"/>
+    <TextView
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold"
+        android:textColor="?attr/first_txt_color"
+        android:ellipsize="end"
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_7"
+        android:text="中医结合"
+        android:lines="1"
+        android:layout_toEndOf="@+id/img_pic"/>
+    <TextView
+        android:textSize="@dimen/sp_12"
+        android:textColor="?attr/third_txt_color"
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:text="234本书籍"
+        android:layout_alignBottom="@+id/img_pic"
+        android:layout_toEndOf="@+id/img_pic"/>
+</RelativeLayout>

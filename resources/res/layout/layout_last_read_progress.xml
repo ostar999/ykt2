@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_last_read_progress"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_16"
+    android:paddingBottom="@dimen/dp_10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dp_16"
+    android:paddingVertical="@dimen/dp_10">
+    <TextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转上次阅读进度"
+        android:drawableRight="@mipmap/ic_continue_read"
+        android:drawablePadding="@dimen/dp_8"/>
+</LinearLayout>

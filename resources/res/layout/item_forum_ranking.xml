@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:id="@+id/ly_all_rank"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_weight="1">
+    <TextView
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="@drawable/circle_textcolor"
+        android:ellipsize="end"
+        android:id="@+id/tv_all_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="综合排行"
+        android:lines="1"/>
+    <ImageView
+        android:id="@+id/img_all_rank"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:src="?attr/ic_forum_type_down_arrow"
+        android:layout_marginStart="4dp"/>
+</LinearLayout>

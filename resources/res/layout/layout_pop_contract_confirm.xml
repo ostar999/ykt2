@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    android:background="@drawable/bg_login_hint"
+    android:paddingLeft="16dp"
+    android:paddingTop="8dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="200dp"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="8dp">
+    <TextView
+        android:textSize="14sp"
+        android:textColor="?attr/white_color"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请确认用户协议及隐私政策"/>
+</LinearLayout>

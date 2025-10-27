@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="14sp"
+        android:textColor="?attr/first_text_color"
+        android:gravity="center"
+        android:id="@+id/tv_question_column"
+        android:background="@drawable/fff7f8fa_20_stroke_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="考点乱序"/>
+</RelativeLayout>

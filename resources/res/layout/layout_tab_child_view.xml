@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/linetq"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="13sp"
+        android:textColor="@color/first_text_color"
+        android:layout_gravity="center"
+        android:id="@+id/tqName"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerInParent="true"/>
+</LinearLayout>

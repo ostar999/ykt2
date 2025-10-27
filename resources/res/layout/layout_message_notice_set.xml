@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/new_bg_one_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tuisong"
+        style="@style/message_notice_set_layout_style">
+        <TextView
+            android:text="消息通知"
+            style="@style/message_notice_set_title_style"/>
+        <Switch
+            android:id="@+id/messageSwitchs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp_24"
+            android:thumb="@drawable/thumb_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:track="@drawable/switch_selector_green"
+            android:layout_marginEnd="16dp"/>
+    </RelativeLayout>
+    <View style="@style/new_gray_line_style"/>
+    <RelativeLayout style="@style/message_notice_set_layout_style">
+        <TextView
+            android:text="评论通知"
+            style="@style/message_notice_set_title_style"/>
+        <Switch
+            android:id="@+id/commentSwitchs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp_24"
+            android:thumb="@drawable/thumb_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:track="@drawable/switch_selector_green"
+            android:layout_marginEnd="16dp"/>
+    </RelativeLayout>
+    <View style="@style/new_gray_line_style"/>
+    <RelativeLayout style="@style/message_notice_set_layout_style">
+        <TextView
+            android:text="点赞通知"
+            style="@style/message_notice_set_title_style"/>
+        <Switch
+            android:id="@+id/likeSwitchs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp_24"
+            android:thumb="@drawable/thumb_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:track="@drawable/switch_selector_green"
+            android:layout_marginEnd="16dp"/>
+    </RelativeLayout>
+    <View style="@style/new_gray_line_style"/>
+    <RelativeLayout
+        android:id="@+id/rlFriendNotice"
+        android:visibility="gone"
+        style="@style/message_notice_set_layout_style">
+        <TextView
+            android:text="新朋友通知"
+            style="@style/message_notice_set_title_style"/>
+        <Switch
+            android:id="@+id/friendSwitchs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp_24"
+            android:thumb="@drawable/thumb_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:track="@drawable/switch_selector_green"
+            android:layout_marginEnd="16dp"/>
+    </RelativeLayout>
+    <View style="@style/new_gray_line_style"/>
+    <RelativeLayout
+        android:visibility="gone"
+        style="@style/message_notice_set_layout_style">
+        <TextView
+            android:text="私信通知"
+            style="@style/message_notice_set_title_style"/>
+        <Switch
+            android:id="@+id/privateLetterSwitchs"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:thumb="@drawable/thumb_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:track="@drawable/switch_selector_green"
+            android:layout_marginEnd="16dp"/>
+    </RelativeLayout>
+    <View style="@style/new_gray_line_style"/>
+    <RelativeLayout style="@style/message_notice_set_layout_style">
+        <TextView
+            android:text="上课提醒通知"
+            style="@style/message_notice_set_title_style"/>
+        <Switch
+            android:id="@+id/courseSwitchs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp_24"
+            android:thumb="@drawable/thumb_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:track="@drawable/switch_selector_green"
+            android:layout_marginEnd="16dp"/>
+    </RelativeLayout>
+    <View style="@style/new_gray_line_style"/>
+    <RelativeLayout style="@style/message_notice_set_layout_style">
+        <TextView
+            android:text="服务通知"
+            style="@style/message_notice_set_title_style"/>
+        <Switch
+            android:id="@+id/serviceSwitchs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp_24"
+            android:thumb="@drawable/thumb_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:track="@drawable/switch_selector_green"
+            android:layout_marginEnd="16dp"/>
+    </RelativeLayout>
+    <View style="@style/line_gray_style"/>
+    <RelativeLayout style="@style/message_notice_set_layout_style">
+        <TextView
+            android:text="课程更新提醒"
+            style="@style/message_notice_set_title_style"/>
+        <Switch
+            android:id="@+id/courseUpdateSwitchs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp_24"
+            android:thumb="@drawable/thumb_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:track="@drawable/switch_selector_green"
+            android:layout_marginEnd="16dp"/>
+    </RelativeLayout>
+    <View style="@style/new_gray_line_style"/>
+</LinearLayout>

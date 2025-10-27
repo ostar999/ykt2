@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="11sp"
+    android:textColor="?attr/home_page_king_kong_area_text_color"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="错题"
+    android:drawableTop="?attr/wrongimg_new"
+    android:drawablePadding="8dp"/>

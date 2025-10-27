@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:id="@+id/restTimeRll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:textColor="@color/color_303030"
+        android:gravity="center"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:text="休息时间提醒"
+        android:layout_centerInParent="true"/>
+    <View
+        android:id="@+id/lineView"
+        style="@style/line_style_book"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="vertical"
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:textColor="@color/color_303030"
+        android:gravity="center"
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_58"
+        android:text="取消"/>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_128"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/bg_download_toast"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:paddingHorizontal="@dimen/dp_12"
+        android:paddingVertical="@dimen/dp_10">
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="正在下载  |"/>
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:id="@+id/tv_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  查看 "/>
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:src="@drawable/ic_white_arrow_right"/>
+    </LinearLayout>
+</LinearLayout>

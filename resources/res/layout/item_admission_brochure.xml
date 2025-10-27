@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/shape_white_corners_12"
+    android:padding="@dimen/dp_12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_8">
+    <TextView
+        android:textSize="@dimen/sp_15"
+        android:textColor="?attr/first_txt_color"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2025年北京大学招生简章"/>
+    <TextView
+        android:textSize="@dimen/sp_12"
+        android:textColor="?attr/third_txt_color"
+        android:id="@+id/tv_browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="1234 浏览"/>
+</LinearLayout>

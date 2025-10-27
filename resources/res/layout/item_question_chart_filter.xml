@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_20">
+    <TextView
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        android:textColor="?attr/first_txt_color"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:text="试题难度"/>
+    <com.psychiatrygarden.widget.LabelsView
+        android:id="@+id/labelView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        app:labelBackground="@drawable/bg_item_chart_filter"
+        app:labelGravity="center"
+        app:labelTextColor="@drawable/color_item_chart_filter_text"
+        app:labelTextHeight="@dimen/dp_32"
+        app:labelTextPaddingBottom="@dimen/dp_6"
+        app:labelTextPaddingLeft="@dimen/dp_12"
+        app:labelTextPaddingRight="@dimen/dp_12"
+        app:labelTextPaddingTop="@dimen/dp_6"
+        app:labelTextSize="@dimen/sp_12"
+        app:lineMargin="@dimen/dp_12"
+        app:selectType="MULTI"
+        app:wordMargin="@dimen/dp_12"/>
+</LinearLayout>

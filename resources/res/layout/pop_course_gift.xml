@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/bg_round_corner_top_radius_16"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dp_16">
+    <ImageView
+        android:layout_gravity="end"
+        android:id="@+id/iv_close"
+        android:paddingLeft="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_4"
+        android:layout_width="@dimen/dp_18"
+        android:layout_height="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_16"
+        android:src="?attr/closeing"
+        android:paddingVertical="@dimen/dp_4"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:layout_marginVertical="@dimen/dp_12">
+        <TextView
+            android:textSize="@dimen/sp_13"
+            android:textColor="?attr/first_txt_color"
+            android:id="@+id/tv_gift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="赠品"
+            android:textScaleX="1.1"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+</LinearLayout>

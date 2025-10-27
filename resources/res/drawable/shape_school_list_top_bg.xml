@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="?attr/school_list_top_start"
+        android:endColor="?attr/new_bg_two_color_new"
+        android:angle="270"
+        android:centerColor="?attr/school_list_top_start"/>
+</shape>

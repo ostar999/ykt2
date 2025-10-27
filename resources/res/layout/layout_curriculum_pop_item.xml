@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/lineview"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/my_curr_collect"/>
+    <TextView
+        android:textSize="12dp"
+        android:textColor="?attr/first_text_color"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="我的收藏"/>
+</LinearLayout>

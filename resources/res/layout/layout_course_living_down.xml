@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/selectTv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="15dp"
+        android:src="?attr/download_item_un_select_icon"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="?attr/download_item_second_node_title_color"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/title"
+        android:paddingRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="感覺感覺"
+        android:maxLines="1"
+        android:drawablePadding="15dp"
+        android:layout_toRightOf="@+id/selectTv"/>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="?attr/tertiary_text_color"
+        android:id="@+id/detailTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="本地  31分钟  已学完"
+        android:layout_below="@+id/title"
+        android:layout_alignLeft="@+id/title"/>
+    <View
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/detailTxt"/>
+</RelativeLayout>

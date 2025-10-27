@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f7f7f7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.psychiatrygarden.widget.ClearEditText
+        android:textSize="14sp"
+        android:textColor="?attr/question_color"
+        android:textColorHint="?attr/dialog_input_hint_color"
+        android:id="@+id/ed_search"
+        android:background="?attr/line_all_round"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint=" 请输入标题关键词"
+        android:singleLine="true"
+        android:drawablePadding="5dp"
+        android:imeOptions="actionSearch"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:drawableStart="?attr/icon_search"
+        android:layout_toStartOf="@+id/searchTxt"/>
+    <TextView
+        android:textColor="?attr/search_text_color"
+        android:gravity="center"
+        android:id="@+id/searchTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="搜索"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true"/>
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ed_search"/>
+</RelativeLayout>

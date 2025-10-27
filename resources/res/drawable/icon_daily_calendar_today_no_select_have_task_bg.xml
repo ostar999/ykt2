@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="32dp"
+    android:width="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+    <path
+        android:fillColor="?attr/daily_calendar_today_bg_color"
+        android:pathData="M16,16m-15.5,0a15.5,15.5 0,1 1,31 0a15.5,15.5 0,1 1,-31 0"
+        android:strokeColor="?attr/new_bg_one_border_color"
+        android:strokeWidth="1"/>
+    <path
+        android:fillColor="?attr/daily_calendar_today_bg_color"
+        android:pathData="M18.891,24.558C19.135,24.314 19.532,24.314 19.776,24.558C20.02,24.802 20.02,25.199 19.776,25.443L15.776,29.443C15.658,29.56 15.499,29.625 15.333,29.625C15.168,29.625 15.008,29.56 14.891,29.443L12.891,27.443L12.811,27.344C12.651,27.102 12.677,26.771 12.891,26.558C13.104,26.345 13.434,26.318 13.677,26.478L13.776,26.558L15.333,28.116L18.891,24.558Z"/>
+</vector>

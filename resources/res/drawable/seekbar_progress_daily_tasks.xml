@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+        <shape>
+            <corners android:radius="3dp"/>
+            <solid android:color="?attr/new_gray_line_color"/>
+        </shape>
+    </item>
+    <item
+        android:id="@android:id/progress"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+        <clip>
+            <shape>
+                <corners android:radius="3dp"/>
+                <solid android:color="?attr/main_theme_red_color"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

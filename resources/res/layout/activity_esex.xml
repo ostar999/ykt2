@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/bg_backgroud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="15sp"
+        android:textColor="?attr/question_color"
+        android:id="@+id/exesName"
+        android:paddingLeft="10dp"
+        android:paddingTop="17dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:drawableEndCompat="?attr/icon_indicator_right"/>
+</RelativeLayout>

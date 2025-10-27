@@ -1,0 +1,8 @@
+package com.koushikdutta.urlimageviewhelper;
+
+/* loaded from: classes4.dex */
+public interface Constants {
+    public static final int HONEYCOMB = 11;
+    public static final String LOGTAG = "UrlImageViewHelper";
+    public static final boolean LOG_ENABLED = false;
+}

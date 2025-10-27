@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/my_follow_ll"
+    android:background="@drawable/shape_new_bg_one_circle_gray_bg"
+    android:layout_width="@dimen/dp_130"
+    android:layout_height="@dimen/dp_60"
+    android:layout_marginRight="@dimen/dp_12">
+    <com.psychiatrygarden.widget.CircleImageView
+        android:id="@+id/my_follow_iv"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:src="@mipmap/ic_order_default"/>
+    <TextView
+        android:textSize="@dimen/sp_13"
+        android:textColor="?attr/first_txt_color"
+        android:ellipsize="end"
+        android:id="@+id/my_follow_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_12"
+        android:text="北京大学"
+        android:maxLines="2"
+        android:layout_weight="1"/>
+</LinearLayout>

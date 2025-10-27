@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/ic_publish_circle_night"/>
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/ic_publish_circle_night"/>
+    <item android:drawable="@drawable/homepage_bottom_circle_default_night_new"/>
+</selector>

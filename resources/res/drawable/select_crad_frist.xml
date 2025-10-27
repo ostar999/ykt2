@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:dither="true"
+    android:enterFadeDuration="500"
+    android:exitFadeDuration="500"
+    android:autoMirrored="true">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/shape_card_frist_red"/>
+    <item android:drawable="@drawable/shape_crad_frist"/>
+</selector>

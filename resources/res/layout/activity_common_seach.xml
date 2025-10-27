@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_seach"
+    android:background="?attr/line_all_round"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_margin="14dp">
+    <EditText
+        android:textSize="16sp"
+        android:textColor="?attr/question_color"
+        android:textColorHint="?attr/dialog_input_hint_color"
+        android:id="@+id/edit_seach"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="输入关键字"
+        android:inputType="textPersonName"
+        android:imeOptions="actionSearch"
+        android:paddingStart="41dp"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:background="?attr/icon_search"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="14dp"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>

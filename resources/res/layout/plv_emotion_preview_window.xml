@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.easefun.polyv.livecommon.ui.widget.PLVTriangleIndicateLayout
+        android:id="@+id/plv_triangle_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicateColor="#e51a1b1f"
+        app:rectRadius="4dp"
+        app:triangleHeight="8dp"
+        app:triangleMargin="42dp"
+        app:triangleMarginType="left"
+        app:trianglePosition="bottom"
+        app:triangleWidth="12dp">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/plv_gif_image_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"/>
+    </com.easefun.polyv.livecommon.ui.widget.PLVTriangleIndicateLayout>
+</RelativeLayout>

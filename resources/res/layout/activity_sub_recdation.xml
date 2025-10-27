@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/bg_backgroud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ExpandableListView
+        android:id="@+id/elv_tiku_question"
+        android:background="?attr/bg_backgroud"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@null"
+        android:childDivider="?attr/divider_color"
+        android:divider="?attr/divider_color"
+        android:dividerHeight="0.5dp"/>
+</RelativeLayout>

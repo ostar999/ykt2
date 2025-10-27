@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_50"
+    android:paddingTop="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_50"
+    android:paddingBottom="@dimen/dp_20"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dp_50"
+    app:background_normal="@color/color_0a000000"
+    app:corner_radius="@dimen/dp_13">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/rotate_loading"/>
+    <TextView
+        android:textSize="@dimen/sp_13"
+        android:textColor="@color/color_303030"
+        android:id="@+id/tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="加载中..."/>
+</com.ruffian.library.widget.RLinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="32dp"
+    android:width="103dp"
+    android:viewportWidth="103"
+    android:viewportHeight="32">
+    <path
+        android:fillColor="@drawable/_icon_knowledge_map_task_progress1__0_res_0x7f08001f"
+        android:pathData="M0,8C0,3.58 3.58,0 8,0H91.45C92.83,0 94.11,0.71 94.84,1.88L102.34,13.88C103.15,15.18 103.15,16.82 102.34,18.12L94.84,30.12C94.11,31.29 92.83,32 91.45,32H8C3.58,32 0,28.42 0,24V8Z"/>
+</vector>

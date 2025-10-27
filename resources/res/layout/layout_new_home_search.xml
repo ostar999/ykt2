@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ly_view"
+    android:background="?attr/new_bg_one_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/titlebar_layout"
+        layout="@layout/nav_search_title_view"/>
+    <cn.webdemo.com.supporfragment.tablayout.MagicIndicator
+        android:id="@+id/magic_indicator"
+        android:background="?attr/app_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"/>
+    <View style="@style/new_gray_line_style"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:background="?attr/new_bg_two_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

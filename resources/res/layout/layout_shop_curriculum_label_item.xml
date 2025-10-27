@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relview"
+    android:clipChildren="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="15sp"
+        android:textColor="@drawable/select_shop_font"
+        android:gravity="center_vertical"
+        android:id="@+id/laeblTv"
+        android:background="@drawable/select_curriculum_shop"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/tjimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tjimg"
+        android:layout_alignRight="@+id/laeblTv"/>
+</RelativeLayout>

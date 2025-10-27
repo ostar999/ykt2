@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_item"
+    android:layout_marginEnd="@dimen/dp_16"
+    style="@style/personal_item_layout_style">
+    <ImageView
+        android:id="@+id/img_icon"
+        android:src="?attr/ic_personal_cut_question"
+        style="@style/personal_item_layout_img_style"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="已斩试题"
+        style="@style/personal_item_layout_name_style"/>
+</LinearLayout>

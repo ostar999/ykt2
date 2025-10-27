@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/content_item_padding_large"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/circle_vote_item_height">
+    <View
+        android:id="@+id/view_divider"
+        android:background="@color/color_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/content_item_padding_large"
+        android:layout_alignParentBottom="true"/>
+    <EditText
+        android:textSize="@dimen/content_text_size"
+        android:gravity="center"
+        android:id="@+id/et_vote_item"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:hint="@string/vote_item_1_hint"
+        android:singleLine="true"
+        android:maxLength="15"
+        android:layout_above="@+id/view_divider"
+        android:textCursorDrawable="@drawable/shape_edit_cursor"/>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/topimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/showup"
+        android:layout_alignRight="@+id/recyclerView"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:background="@drawable/shape_analy_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topimg"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <ImageView
+        android:id="@+id/buttomimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/showdown"
+        android:layout_below="@+id/recyclerView"
+        android:layout_alignRight="@+id/recyclerView"/>
+</RelativeLayout>

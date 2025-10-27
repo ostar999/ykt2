@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loading_1_night"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loading_2_night"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loading_3_night"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loading_4_night"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loading_5_night"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loading_6_night"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loading_7_night"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loading_8_night"/>
+</animation-list>

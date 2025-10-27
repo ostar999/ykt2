@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/new_bg_one_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout style="@style/set_layout_style">
+        <TextView
+            android:id="@+id/tv_black_form"
+            android:text="黑名单"
+            style="@style/set_text_style"/>
+        <ImageView style="@style/personal_right_arrow_style"/>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        style="@style/new_gray_line_style"/>
+</LinearLayout>

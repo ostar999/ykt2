@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/preg_deek_rond_bg"/>
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/preg_deek_rond_bg"/>
+    <item
+        android:state_checkable="true"
+        android:drawable="@drawable/preg_deek_rond_bg"/>
+    <item>
+        <shape>
+            <solid android:color="#ff1c2134"/>
+            <corners
+                android:topLeftRadius="100dp"
+                android:topRightRadius="100dp"
+                android:bottomLeftRadius="100dp"
+                android:bottomRightRadius="100dp"/>
+        </shape>
+    </item>
+</selector>

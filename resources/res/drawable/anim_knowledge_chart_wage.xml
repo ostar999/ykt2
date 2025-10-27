@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item
+        android:duration="200"
+        android:drawable="@drawable/ic_knowledge_chart_wage"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/ic_knowledge_chart_wage_2"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/ic_knowledge_chart_wage_3"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/ic_knowledge_chart_wage_4"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/ic_knowledge_chart_wage_5"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/ic_knowledge_chart_wage_6"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/ic_knowledge_chart_wage_7"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/ic_knowledge_chart_wage_8"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/ic_knowledge_chart_wage_9"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/ic_knowledge_chart_wage_10"/>
+</animation-list>

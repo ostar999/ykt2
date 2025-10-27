@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.psychiatrygarden.widget.ClearEditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="15sp"
+    android:textColor="?attr/question_color"
+    android:textColorHint="?attr/dialog_input_hint_color"
+    android:gravity="center"
+    android:background="?attr/bg_backgroud"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxLength="50"
+    android:textCursorDrawable="@drawable/color_cursor"/>

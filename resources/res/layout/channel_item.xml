@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_subscribe"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="72dp"
+    android:minHeight="38dp">
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/subscribe_item_text_color"
+        android:gravity="center"
+        android:id="@+id/text_item"
+        android:background="?attr/input_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="72dp"
+        android:minHeight="38dp"
+        android:maxLines="2"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

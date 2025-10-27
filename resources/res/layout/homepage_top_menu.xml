@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/bg_backgroud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.psychiatrygarden.widget.SwipeView
+        android:id="@+id/swipeView_top_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.psychiatrygarden.widget.CirclePoint
+        android:id="@+id/circlepoint"
+        android:background="?attr/bg_backgroud"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:appSix="true"
+        app:size="6dp"/>
+    <View
+        android:background="?attr/gray_line_126"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

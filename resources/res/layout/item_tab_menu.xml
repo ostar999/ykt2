@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/homepage_bottom_question_database_default"/>
+    <TextView
+        android:textSize="@dimen/sp_11"
+        android:textColor="@color/homepage_bottom_tab_color"
+        android:gravity="center"
+        android:id="@+id/tv_menu_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

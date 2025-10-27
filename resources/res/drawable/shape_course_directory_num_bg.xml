@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:startColor="?attr/course_directory_combine_num_start_color"
+        android:endColor="@color/course_directory_combine_num_end_color"
+        android:angle="0"
+        android:type="linear"
+        android:centerColor="?attr/course_directory_combine_num_center_color"/>
+    <corners
+        android:topLeftRadius="100dp"
+        android:topRightRadius="100dp"
+        android:bottomLeftRadius="100dp"
+        android:bottomRightRadius="100dp"/>
+</shape>

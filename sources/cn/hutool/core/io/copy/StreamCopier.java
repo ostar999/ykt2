@@ -1,0 +1,69 @@
+package cn.hutool.core.io.copy;
+
+import cn.hutool.core.io.IORuntimeException;
+import cn.hutool.core.io.StreamProgress;
+import cn.hutool.core.lang.Assert;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+/* loaded from: classes.dex */
+public class StreamCopier extends IoCopier<InputStream, OutputStream> {
+    public StreamCopier() {
+        this(8192);
+    }
+
+    private long doCopy(InputStream inputStream, OutputStream outputStream, byte[] bArr, StreamProgress streamProgress) throws IOException {
+        int i2;
+        long j2 = this.count;
+        if (j2 <= 0) {
+            j2 = Long.MAX_VALUE;
+        }
+        long j3 = 0;
+        while (j2 > 0 && (i2 = inputStream.read(bArr, 0, bufferSize(j2))) >= 0) {
+            outputStream.write(bArr, 0, i2);
+            if (this.flushEveryBuffer) {
+                outputStream.flush();
+            }
+            long j4 = i2;
+            j2 -= j4;
+            j3 += j4;
+            if (streamProgress != null) {
+                streamProgress.progress(this.count, j3);
+            }
+        }
+        return j3;
+    }
+
+    public StreamCopier(int i2) {
+        this(i2, -1L);
+    }
+
+    @Override // cn.hutool.core.io.copy.IoCopier
+    public long copy(InputStream inputStream, OutputStream outputStream) throws IOException, IllegalArgumentException {
+        Assert.notNull(inputStream, "InputStream is null !", new Object[0]);
+        Assert.notNull(outputStream, "OutputStream is null !", new Object[0]);
+        StreamProgress streamProgress = this.progress;
+        if (streamProgress != null) {
+            streamProgress.start();
+        }
+        try {
+            long jDoCopy = doCopy(inputStream, outputStream, new byte[bufferSize(this.count)], streamProgress);
+            outputStream.flush();
+            if (streamProgress != null) {
+                streamProgress.finish();
+            }
+            return jDoCopy;
+        } catch (IOException e2) {
+            throw new IORuntimeException(e2);
+        }
+    }
+
+    public StreamCopier(int i2, long j2) {
+        this(i2, j2, null);
+    }
+
+    public StreamCopier(int i2, long j2, StreamProgress streamProgress) {
+        super(i2, j2, streamProgress);
+    }
+}

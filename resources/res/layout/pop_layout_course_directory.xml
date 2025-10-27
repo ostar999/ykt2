@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    android:background="#141414"
+    android:layout_width="@dimen/dp_375"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:paddingHorizontal="@dimen/dp_16">
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/white"
+            android:gravity="start|center_vertical"
+            android:id="@+id/tv_course_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_chapter"/>
+    </LinearLayout>
+    <com.psychiatrygarden.widget.DetailCourseDirectoryWidget
+        android:id="@+id/directory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

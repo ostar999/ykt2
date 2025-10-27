@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/rl_column_ques"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <CheckedTextView
+        android:textSize="12sp"
+        android:gravity="center"
+        android:id="@+id/tv_column_name"
+        android:background="@drawable/bg_tab_combine_question"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="历年真题"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_down_triangle"
+        android:visibility="visible"
+        android:layout_width="9dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="-1dp"
+        android:src="@drawable/ic_triangle_down"/>
+</LinearLayout>

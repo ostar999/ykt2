@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="17dp"/>
+    <stroke
+        android:width="0.5dp"
+        android:color="?attr/note_pop_input_bg"/>
+    <solid android:color="?attr/note_pop_input_bg"/>
+</shape>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/sub_contenr_text_size"
+    android:id="@+id/tv_textview"
+    android:background="@color/gray_bg"
+    android:paddingLeft="@dimen/content_item_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>

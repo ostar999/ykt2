@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.easefun.polyv.livecommon.ui.widget.magicindicator.PLVMagicIndicator
+            android:id="@+id/chatroom_tab"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+        <View
+            android:id="@+id/split_view"
+            android:background="#000000"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <com.easefun.polyv.livecommon.ui.widget.PLVSimpleViewPager
+            android:id="@+id/chatroom_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.easefun.polyv.livecloudclass.modules.pagemenu.commodity.PLVLCCommodityPushLayout
+        android:id="@+id/plvlc_commodity_push_layout"
+        android:visibility="gone"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentStart="true"
+        app:plv_show_on_landscape="false"
+        app:plv_show_on_portrait="true"/>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:src="?attr/ic_load_fail"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="?attr/tertiary_text_color"
+        android:id="@+id/btn_reload"
+        android:background="@drawable/ffeeeeee_20_stroke_1"
+        android:paddingLeft="16dp"
+        android:paddingTop="6dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="点击刷新页面"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="6dp"/>
+</LinearLayout>

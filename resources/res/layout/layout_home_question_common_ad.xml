@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/head_question_top_ad"/>
+    <include layout="@layout/layout_question_bank_king_kong"/>
+    <include layout="@layout/head_question_top_ad_two"/>
+    <include layout="@layout/layout_home_do_question_statistics"/>
+    <ImageView
+        android:id="@+id/iv_knowledge_explore"
+        android:background="@drawable/anim_knowledge_chart_wage"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_28"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginHorizontal="@dimen/dp_16"/>
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/tv_create_plan"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:text="创建刷题规划"
+        android:layout_marginHorizontal="@dimen/dp_16"/>
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/tv_show_plan"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:text="查看创建的规划"
+        android:layout_marginHorizontal="@dimen/dp_16"/>
+    <include layout="@layout/layout_question_home_kingkong_area"/>
+    <View
+        android:background="?attr/new_bg_two_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginHorizontal="@dimen/dp_16"/>
+</LinearLayout>

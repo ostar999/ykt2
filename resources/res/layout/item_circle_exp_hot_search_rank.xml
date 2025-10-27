@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_item"
+    android:background="@drawable/shape_rank_user_owner_bg"
+    android:paddingLeft="@dimen/dp_8"
+    android:paddingRight="@dimen/dp_8"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_16"
+    android:paddingHorizontal="@dimen/dp_8">
+    <TextView
+        android:textSize="@dimen/sp_13"
+        android:textStyle="bold"
+        android:textColor="@color/forth_txt_color"
+        android:gravity="center"
+        android:id="@+id/tv_sort"
+        android:background="@mipmap/ic_rank_first"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:text="1"/>
+    <TextView
+        android:textSize="@dimen/sp_15"
+        android:textColor="?attr/first_txt_color"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="低价出25考研-课通低价出25考研-课通低价出25考研-课通低价出25考研-课通"
+        android:lines="1"
+        android:layout_marginStart="@dimen/dp_8"/>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_filtrate1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:textSize="14sp"
+            android:textColor="?attr/question_color"
+            android:id="@+id/tv_filtrate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/iv_filtrate1"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="?attr/duigou"
+            android:layout_toRightOf="@+id/tv_filtrate1"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+</RelativeLayout>

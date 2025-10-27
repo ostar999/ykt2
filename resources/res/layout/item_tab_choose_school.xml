@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabItemRoot"
+    android:background="@drawable/shape_app_bg_top_corners8"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_44">
+    <TextView
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold"
+        android:textColor="?attr/first_txt_color"
+        android:gravity="center"
+        android:id="@+id/tv_tab_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名称"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

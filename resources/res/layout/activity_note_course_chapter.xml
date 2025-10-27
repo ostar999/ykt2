@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:textSize="16sp"
+        android:textColor="?attr/question_color"
+        android:gravity="top"
+        android:id="@+id/edit_note"
+        android:background="?attr/app_bg"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="200dp"
+        android:lineSpacingExtra="1.2dp"
+        android:lineSpacingMultiplier="1.2"/>
+    <ScrollView
+        android:id="@+id/sv_note"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16sp"
+            android:gravity="top"
+            android:id="@+id/tv_note"
+            android:background="?attr/font_com_list"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+</RelativeLayout>

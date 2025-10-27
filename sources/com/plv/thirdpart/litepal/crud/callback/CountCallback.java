@@ -1,0 +1,6 @@
+package com.plv.thirdpart.litepal.crud.callback;
+
+/* loaded from: classes5.dex */
+public interface CountCallback {
+    void onFinish(int i2);
+}

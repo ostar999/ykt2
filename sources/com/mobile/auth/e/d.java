@@ -1,0 +1,8 @@
+package com.mobile.auth.e;
+
+import org.json.JSONObject;
+
+/* loaded from: classes4.dex */
+public interface d {
+    void a(String str, String str2, com.cmic.sso.sdk.a aVar, JSONObject jSONObject);
+}

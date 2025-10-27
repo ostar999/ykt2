@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/plv_selector_point_reward_item"
+    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/plv_iv_reward_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="#d0d0d0"
+        android:id="@+id/plv_tv_reward_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="10sp"
+        android:textColor="#adadc0"
+        android:ellipsize="marquee"
+        android:id="@+id/plv_tv_reward_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:singleLine="true"/>
+</LinearLayout>

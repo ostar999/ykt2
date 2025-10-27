@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alivc_common_dialog_recyclerview"
+        android:background="@color/alivc_common_bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:background="@color/alivc_common_bg_white_gray"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/alivc_common_font_gray_333333"
+        android:gravity="center"
+        android:id="@+id/alivc_tv_cancel"
+        android:background="@color/alivc_common_bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/alivc_common_cancel"/>
+</LinearLayout>

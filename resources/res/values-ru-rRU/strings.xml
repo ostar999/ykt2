@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="picture_photo_camera">Нажмите для фотографирования</string>
+    <string name="picture_photo_pictures">рисунок щелчок</string>
+    <string name="picture_photo_recording">видео зажать</string>
+    <string name="picture_recording_time_is_short">Слишком короткая запись</string>
+</resources>

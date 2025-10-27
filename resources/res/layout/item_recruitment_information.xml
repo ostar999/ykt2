@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ly_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/line"
+        style="@style/new_gray_line_style"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_major"
+            android:padding="@dimen/dp_12"
+            android:visibility="invisible"
+            android:layout_width="@dimen/dp_136"
+            android:layout_height="wrap_content"
+            android:text="专业"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/ly_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_alignTop="@+id/tv_major"
+            android:layout_alignBottom="@+id/tv_major"
+            android:layout_toEndOf="@+id/tv_major">
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/ly_question"
+                android:layout_width="@dimen/dp_64"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_pass_score"
+                    android:layout_width="wrap_content"
+                    android:text="310"
+                    style="@style/choose_school_form_txt_style"/>
+                <ImageView
+                    android:id="@+id/img_question"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dp_12"
+                    android:layout_height="@dimen/dp_12"
+                    android:src="@mipmap/ic_score_question"
+                    android:layout_marginStart="@dimen/dp_2"/>
+            </LinearLayout>
+            <View style="@style/hor_new_gray_line_style"/>
+            <TextView
+                android:id="@+id/tv_height_score"
+                android:layout_width="@dimen/dp_64"
+                android:text="330"
+                style="@style/choose_school_form_txt_style"/>
+            <View style="@style/hor_new_gray_line_style"/>
+            <TextView
+                android:id="@+id/tv_low_score"
+                android:layout_width="@dimen/dp_64"
+                android:text="50"
+                style="@style/choose_school_form_txt_style"/>
+            <View style="@style/hor_new_gray_line_style"/>
+            <TextView
+                android:id="@+id/tv_avg_score"
+                android:layout_width="@dimen/dp_64"
+                android:text="180"
+                style="@style/choose_school_form_txt_style"/>
+            <View style="@style/hor_new_gray_line_style"/>
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12"
+                android:src="@mipmap/ic_school_arrow"
+                android:layout_marginHorizontal="@dimen/dp_12"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

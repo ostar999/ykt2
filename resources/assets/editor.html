@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile Rich Editor</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+    #editor:empty:before{
+    content:attr(placeholder);
+    font-size: 16px;
+}
+#editor:focus:before{
+    content:none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!--<header>-->
+            <!--<input type="text" placeholder="输入标题，限5-50个字" class="title" id="title" />-->
+        <!--</header>-->
+        <!--<div class="line"></div>-->
+<!--        <div id="editor" contenteditable="true" placeholder='&#160;&#160;输入内容，限10-10000个字'></div>-->
+        <div id="editor" contenteditable="true" placeholder='输入内容，限10-10000个字'></div>
+    </div>
+    <script src="./richeditor.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_filtrate1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56">
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:textColor="?attr/first_txt_color"
+            android:id="@+id/tv_filtrate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有视频的真题"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/iv_filtrate1"
+            android:background="@drawable/filtrate_select_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/tv_filtrate1"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/line"
+        android:background="?attr/new_bg_one_border_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</LinearLayout>
